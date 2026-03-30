@@ -1,0 +1,967 @@
+VERSION "Generated DBC File"
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: PTO ECM ACC Vector__XXX BSM TCCM Onstar EBCM TCM GW BPIM VITM SGCM FSCM
+
+BO_ 193 PPEIDrvWhRotStat: 8 EBCM
+	SG_ WhRotStatLDrvDistStampRolCntr : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ WhRotStatLDrvSeqNum : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ WhRotStatLDrvRsttOccurd : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ WhRotStatLDrvDistVald : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ WhRotStatLDrvDistPulsCntr : 1|10@0+ (1,0) [0|1023] "" Vector__XXX
+	SG_ WhRotStatLDrvDistStamp : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
+	SG_ WhRotStatRDrvDistStampRolCntr : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ WhRotStatRDrvSeqNum : 37|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ WhRotStatRDrvRsttOccurd : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ WhRotStatRDrvDistVald : 34|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ WhRotStatRDrvDistPulsCntr : 33|10@0+ (1,0) [0|1023] "" Vector__XXX
+	SG_ WhRotStatRDrvDistStamp : 55|16@0+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 197 PPEINonDrvWhRotStat: 8 EBCM
+	SG_ WhRotStatLNonDrvDistStampRolCntr : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ WhRotStatLNonDrvSeqNum : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ WhRotStatLNonDrvRsttOccurd : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ WhRotStatLNonDrvDistVald : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ WhRotStatLNonDrvDistPulsCntr : 1|10@0+ (1,0) [0|1023] "" Vector__XXX
+	SG_ WhRotStatLNonDrvDistStamp : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
+	SG_ WhRotStatRNonDrvDistStampRolCntr : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ WhRotStatRNonDrvSeqNum : 37|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ WhRotStatRNonDrvRsttOccurd : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ WhRotStatRNonDrvDistVald : 34|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ WhRotStatRNonDrvDistPulsCntr : 33|10@0+ (1,0) [0|1023] "" Vector__XXX
+	SG_ WhRotStatRNonDrvDistStamp : 55|16@0+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 199 PPEITransOutRotStat: 4 TCM
+	SG_ TransOutRotStatRotDir : 7|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransOutRotStatLastTransType : 5|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransOutRotStatRsttOccurd : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransOutRotStatVald : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransOutRotStatPulsCntr : 1|10@0+ (1,0) [0|1023] "" Vector__XXX
+	SG_ TransOutRotStatStamp : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 201 PPEIEngGenStat1: 8 ECM
+	SG_ EngRunActv : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrtrnCrnkActv : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrtrnCrnkAborted : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrtrnRunAborted : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrTakeOffPwrtrnRunAborted : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngIdleActv : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngSpdStat : 1|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngSpd : 15|16@0+ (0.25,0) [0|16383.8] "RPM" Vector__XXX
+	SG_ AccelActlPosVald : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrzCtrlActv : 30|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrzCtrlEnabld : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DrvrThrotOverrdDet : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DrvrThrotOverrdDetnAlvRolCnt : 27|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ DrvrThrotOverrdDetProtVal : 25|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ AccelActlPos : 39|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+	SG_ PlatEngSpdCmdSuprcd : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PlatEngSpdCmdInhReq : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngCylDeactMode : 43|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrtrnBrkPedlDiscrtInpStatVald : 41|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrtrnBrkPedlDiscrtInpStat : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ RemtVehStrtEngRung : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngCylDeactEvntPend : 54|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngIntkAirBstPresVald : 51|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngIntkAirBstPres : 63|8@0- (1,0) [-128|127] "kPa(g)" Vector__XXX
+
+BO_ 241 PPEIBrkApplyStat: 4 BSM
+	SG_ BrkPedlModTravAchvdVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ BrkPedlModTravAchvd : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ BrkPedlPosAlvRolCnt : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ BrkPedlIntlTravAchvdProt : 3|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ BrkPedlIntlTravAchvd : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ BrkPedlIntlTravAchvdVald : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ BrkPedlPos : 15|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+	SG_ BrkPedlPosGrad : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ BrkLghtsActv : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ BrkApplySensrHomePosLearnd : 30|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 249 PPEITransGenStat1: 8 TCM
+	SG_ TransOverllEstmdTorqRatVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransOverllEstmdTorqRat : 6|15@0- (0.00390625,0) [-64|63.9961] "" Vector__XXX
+	SG_ TransOutShftAnglrVelVald : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransOutShftAnglrVelSensrPres : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransOutRotsRolCntRsttOccurd : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransOutRotsRolCntVald : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransOutRotsRolCnt : 47|16@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransCrzCtrlVehSpdShiftEvntThr : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 288 PPEIVehOdom: 5 Vector__XXX
+	SG_ VehOdom : 7|32@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ VehOdomVald : 32|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 381 PPEIAntilkBrkAndTCStat: 7 EBCM
+	SG_ TractCtrlSysOprtngMode : 4|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ VehStabEnhmctMode : 50|3@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 451 PPEIEngTorqStat2: 8 ECM
+	SG_ EngTorqReductFailureStat : 7|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngTorqActlExtRngVald : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngTorqActlExtRng : 3|12@0+ (0.5,-848) [-848|1199.5] "Nm" Vector__XXX
+	SG_ PwrtrnRegltdGenrCtrlActv : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AccelEffctvPosVald : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngTorqDrvrReqExtRngVald : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngTorqDrvrReqExtRng : 19|12@0+ (0.5,-848) [-848|1199.5] "Nm" Vector__XXX
+	SG_ FuelFiltRemLife : 39|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+	SG_ GenrCrntVald : 47|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ GenrCrnt : 46|7@0+ (1,0) [0|127] "A" Vector__XXX
+	SG_ AccelEffctvPos : 55|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+	SG_ EngDrvrPrefModeSwtch1Enabld : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngDrvrPrefModeSwtch1Stat : 62|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EconModeActvIndictnOn : 61|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EconModeReqDenyIndictnOn : 60|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 452 PPEITorqReqStat: 4 ECM
+	SG_ AccelPedlOverrdActv : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AccelPedlOverrdActvAlvRolCnt : 3|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ AccelPedlOverrdActvProtVal : 1|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ AdaptvCrzCtrlAxlTorqCmdReqStat : 15|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AdaptvCrzCtrlAxlTorqCmdLimtgStat : 12|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ RdLoadNomAxlTorq : 10|19@0+ (0.125,-22534) [-22534|43000] "Nm" Vector__XXX
+
+BO_ 453 PPEIDrvrIntndAxlTorqStat: 6 ECM
+	SG_ DrvrIntndAxlTorqVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DrvrIntndAxlTorq : 6|15@0+ (2,-22534) [-22534|43000] "Nm" Vector__XXX
+	SG_ DrvrIntndAxlTorqMinVald : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DrvrIntndAxlTorqMin : 22|15@0+ (2,-22534) [-22534|43000] "Nm" Vector__XXX
+	SG_ DrvrIntndAxlTorqMaxVald : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DrvrIntndAxlTorqMax : 38|15@0+ (2,-22534) [-22534|43000] "Nm" Vector__XXX
+
+BO_ 455 PPEIChssEngTorqReq1: 7 EBCM
+	SG_ TorqIntrvntType : 5|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TorqReqVal : 3|12@0+ (0.5,-848) [-848|1199.5] "Nm" Vector__XXX
+	SG_ TractCtrlAlvRolCnt : 23|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ ChssSysEngTorqReqProt : 21|14@0+ (1,0) [0|16383] "" Vector__XXX
+	SG_ TractCtrlMaxTorqIncrsRate : 53|6@0+ (16,0) [0|1008] "Nm/s" Vector__XXX
+
+BO_ 460 PPEISecAxlStat: 3 TCCM
+	SG_ SecAxlStat : 7|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ SecAxlCtrlMode : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ SecAxlEstmdTorq : 1|10@0+ (10,0) [0|10230] "Nm" Vector__XXX
+	SG_ SecAxlEstmdTorqVald : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ SecAxlMaxDiffrlVelAllwdActv : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ SecAxlMaxDiffrlVelAllwdReq : 22|7@0+ (2,0) [0|254] "RPM" Vector__XXX
+
+BO_ 462 PPEISecAxlCtrl: 4 EBCM
+	SG_ SecAxlTorqReqActv : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ SecAxlTorqReqVal : 6|10@0+ (10,0) [0|10230] "Nm" Vector__XXX
+	SG_ SecAxlTorqReqAlvRolCnt : 20|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ SecAxlTorqReqProtVal : 18|11@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 463 PPEISecAxlGenInfo: 1 TCCM
+	SG_ SecAxlMalfctnIndictnOn : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ SecAxlTempryInhIndictnOn : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ SecAxlOprtnlMode : 3|4@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 464 PPEIFrntAxlStat: 4 TCCM
+	SG_ FrntAxlStat : 7|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FrntAxlCtrlMode : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FrntAxlEstmdTorq : 3|11@0- (10,0) [-5120|5115] "Nm" Vector__XXX
+	SG_ FrntAxlEstmdTorqVald : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FrntAxlMaxDiffrlVelAllwdActv : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FrntAxlMaxDiffrlVelAllwdVal : 22|7@0+ (2,0) [0|254] "RPM" Vector__XXX
+	SG_ FrntAxlOprtnlMode : 31|3@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 465 PPEIRearAxlStat: 4 TCCM
+	SG_ RearAxlStat : 7|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ RearAxlCtrlMode : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ RearAxlEstmdTorq : 3|11@0- (10,0) [-5120|5115] "Nm" Vector__XXX
+	SG_ RearAxlEstmdTorqVald : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ RearAxlMaxDiffrlVelAllwdActv : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ RearAxlMaxDiffrlVelAllwdVal : 22|7@0+ (2,0) [0|254] "RPM" Vector__XXX
+	SG_ RearAxlOprtnlMode : 31|3@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 481 PPEICrzCtrlSwtchStat: 5 GW
+	SG_ CrzCtrlCnclSwtchActv : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrzCtrlOnSwtchActv : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrzCtrlResmSwtchActv : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrzCtrlSetSwtchActv : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrzCtrlSpdIncrsSwtchActv : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrzCtrlSpdDecSwtchActv : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrzCtrlSwtchDataInteg : 1|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrzCtrlSwtchStatProtVal : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+	SG_ AdaptvCrzCtrlGapSwtchActvtn : 23|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrzCtrlCnclReq : 18|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrzCtrlSwtchStatAlvRolCnt : 17|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ FuelModeSwtchActvVald : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelModeSwtchActv : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngDrvrPrefModeSwtch1AlvRolCnt : 38|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 485 PPEIStrngWhAngl: 8 EBCM
+	SG_ StrngWhAnglVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ StrngWhAnglSensrCalStat : 6|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ StrngWhAnglSensrIntlzd : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ StrngWhAnglSensrMultitrnCapbl : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ StrngWhAngl : 15|16@0- (0.0625,0) [-2048|2047.94] " " Vector__XXX
+	SG_ StrngWhAnglSensrPres : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ StrngWhAnglAlvRolCnt : 30|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrStrngIndictnOn : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ StrngWhAnglGrad : 27|12@0- (1,0) [-2048|2047.94] " /s" Vector__XXX
+	SG_ StrngWhAnglExtProtVal : 47|16@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ StrngWhAnglTimebsRolCnt : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 489 PPEIChssGenStat1: 8 EBCM
+	SG_ BrkPedlDrvrAppldPresDetVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ BrkPedlDrvrAppldPresDet : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransBrkSysCltchRelsReq : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ VehStabEnhmctLatrlAccltnVald : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ VehStabEnhmctLatrlAccltn : 3|12@0- (0.015625,0) [-32|31.9844] "m/s^2" Vector__XXX
+	SG_ BrkSysTransGearReqType : 21|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ BrkSysTransGearReqGear : 19|4@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AdaptvCrzCtrlBrkngActv : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AntilkBrkSysActv : 30|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AntilkBrkSysFail : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TractCtrlSysActv : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TractCtrlSysEnabld : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TractCtrlSysDrvrIntnt : 26|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ VehStabEnhmctSysActv : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ VehDyncCtrlSysStat : 39|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ VehDyncYawRateVald : 36|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ VehDyncYawRate : 35|12@0- (0.0625,0) [-128|127.938] " /s" Vector__XXX
+	SG_ DrvrIndepBrkApplyActv : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ VehDyncOverUndrStrVald : 50|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ VehDyncOverUndrStr : 49|10@0- (0.5,0) [-256|255.5] "%" Vector__XXX
+
+BO_ 490 PPEIAltFuelSysStat: 4 ECM
+	SG_ FuelModeStat : 7|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AltFuelModeReqDenyIndictnOn : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelLvlTnk2PercVald : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AltFuelLvlLow : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AltFuelPrehtActv : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AltFuelAccltnWarngActv : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelLvlTnk2Perc : 15|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+	SG_ FuelTotCapctyTnk2 : 23|12@0+ (0.125,0) [0|511.875] "L" Vector__XXX
+
+BO_ 491 PPEIFuelSysStat: 2 FSCM
+	SG_ FuelSysEstmdPresDelivrdVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ ExhPresReglrValvPosVald : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ ExhPresReglrValvPos : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelSysEstmdPresDelivrd : 1|10@0+ (1,0) [0|1023] "kPa" Vector__XXX
+
+BO_ 493 PPEIFuelSysReq: 8 ECM
+	SG_ FuelCtrlSysFltPres : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelPumpEnabldDiscrtOutCmdndStat : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelDelivryPresReq : 1|10@0+ (1,0) [0|1023] "kPa" Vector__XXX
+	SG_ InstantFuelFlowEst : 23|16@0+ (0.000976562,0) [0|63.999] "g/s" Vector__XXX
+	SG_ AdvncdFuelFlowEst : 39|16@0+ (0.000976562,0) [0|63.999] "g/s" Vector__XXX
+	SG_ CmdndAirFuelRat : 55|16@0+ (0.000488281,0) [0|31.9995] "" Vector__XXX
+
+BO_ 495 PPEIFuelSysReq2: 4 Vector__XXX
+	SG_ MassAirFlowVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ MassAirFlow : 23|16@0+ (0.01,0) [0|655.35] "g/s" Vector__XXX
+
+BO_ 497 PPEIPlatGenStat: 8 GW
+	SG_ BackupPwrModeMstrVuirtDevAvail : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ SysBackupPwrModeEnabld : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ SysBackupPwrMode : 5|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrModeMstrRunCrnkTermStat : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrModeMstrAcsryTermStat : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ SysPwrMode : 1|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ RemtVehStrtReq : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrTakeOffRemtStrtMstrEngStrtReq : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrTakeOffRemtStrtMstrEngShtdReq : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AirCondComprModeReq : 12|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AirCondComprNormLoadVald : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AirCondComprSysVuirtDevAvail : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ ImmobPreRelsPassStat : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ ImmobPreRelsPass : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
+	SG_ ThrotProgrsnReq : 39|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngOilLifeRsttReq : 37|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PrkBrkSwtchActv : 36|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PrkBrkVuirtDevAvail : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AirCondComprNormLoad : 55|8@0+ (0.1,0) [0|25.5] "dm^3/min" Vector__XXX
+	SG_ AirCondComprFailOn : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PrkBrkVuirtDevMask : 62|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ BackupPwrModeMstrVuirtDevMask : 61|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AirCondComprSysVuirtDevMask : 60|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DisplMeasSys : 59|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AirbgDeploy : 58|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AirbgVuirtDevAvail : 57|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelFiltLifeRsttReq : 56|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 499 PPEIPlatTransReq: 3 GW
+	SG_ TransPlatShiftPattSwtchAlvRolCnt : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ TransPlatShiftPattSwtch1Actv : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransPlatShiftPattSwtch2Actv : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransPlatShiftPattSwtch3Actv : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransPlatShiftPattSwtch4Actv : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransOilLifeRsttReq : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ OverdrvDisblReq : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PlatTransTapUDSwtchStatAlvRolCnt : 15|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ PlatTransTapUDEnabSwtchState : 13|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PlatTransTapUDSwtchState : 11|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PlatTransTapUDSecSwtchState : 9|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrtrnShiftPattOverrdActv : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 501 PPEITransGenStat2: 8 TCM
+	SG_ TransTorqConvrtrCltchCmdndMode : 7|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransEstmdGearVald : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransEstmdGear : 3|4@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TopOfTravCltchSwtchActvVald : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TopOfTravCltchSwtchActv : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AutoTransGearShiftDir : 13|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AutoTransCmdndGear : 11|4@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransSkipShiftIndictnOn : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngRecUpshftIndictnOn : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DrvrShiftCtrlReqDenyIndictnOn : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DrvrShiftCtrlTrgtGear : 19|4@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransRngInhStat : 31|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransShiftLvrPosVald : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransShiftLvrPos : 27|4@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ OverdrvDisblReqGrant : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CltchStrtSwtchActvVald : 38|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CltchStrtSwtchActv : 37|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransShiftModeStat : 34|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransShiftLvrLckReq : 47|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransCreepModeActv : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransShiftsDelayd : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransShiftPattActvStat : 44|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransTapUTapDModeStat : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CltchPedlActlPosVald : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransPattSelnEconModeOverrdCmdnd : 52|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransFludPresPres : 51|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransEngagStateVald : 50|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransEngagState : 49|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CltchPedlActlPos : 63|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+
+BO_ 505 PPEIPTOCmdData: 8 PTO
+	SG_ PlatEngSpdCmdOnSwtchActv : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PlatEngSpdCmdSpdIncrsSwtchActv : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PlatEngSpdCmdSpdDecSwtchActv : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AccelPedlPwrTakeOffOverrdActv : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PlatEngSpdCmdModeActv : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PlatEngSpdReq : 2|11@0+ (4,0) [0|8188] "RPM" Vector__XXX
+	SG_ PlatEngSpdCmdAlvRolCnt : 23|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ PlatEngSpdCmdSwtchDataInteg : 21|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PlatEngSpdCmdProtVal : 19|12@0+ (1,0) [0|4095] "" Vector__XXX
+	SG_ PwrTakeOffRemtEngShtdReq : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransPwrTakeOffCltchRelsReq : 38|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrTakeOffTransGearReqType : 37|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrTakeOffTransGearReqGear : 35|4@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FastIdleModeActv : 47|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrTakeOffModeActv : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrTakeOffEngTorqLmtReq : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrTakeOffRemtEngStrtReq : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrTakeOffEngTorqLmtValExtRng : 55|8@0+ (8,0) [0|2040] "Nm" Vector__XXX
+	SG_ PwrTakeOffSysVehTopSpdLmtVal : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 688 PPEIStrtrGenrStat3: 5 SGCM
+	SG_ StrtrGenrSpd : 21|14@0+ (1,0) [0|16383] "RPM" Vector__XXX
+	SG_ StrtrGenrSpdVald : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 707 PPEIEngTorqStat3: 7 ECM
+	SG_ EngMnfldAbsPresVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngTorqMaxExtRngVald : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngTorqMaxExtRng : 3|12@0+ (0.5,-848) [-848|1199.5] "Nm" Vector__XXX
+	SG_ EngTorqMinExtRngVald : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngTorqMinExtRng : 19|12@0+ (0.5,-848) [-848|1199.5] "Nm" Vector__XXX
+	SG_ EngMnfldAbsPres : 55|8@0+ (0.5,0) [0|127.5] "kPa" Vector__XXX
+
+BO_ 715 PPEIAdaptvCrzAxlTorqReq: 8 ACC
+	SG_ AdaptvCrzCtrlCmdAlvRolCnt : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ AdaptvCrzCtrlActv : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AdaptvCrzCtrlType : 15|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AdaptvCrzCtrlDrvrAsstdGoState : 13|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AdaptvCrzCtrlSpclReengagInpReqd : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AdaptvCrzCtrlAxlTorqReq : 10|19@0+ (0.125,-22534) [-22534|43000] "Nm" Vector__XXX
+	SG_ AdaptvCrzCtrlAxlTorqCmdProt : 32|25@0+ (1,0) [0|3.35544e+07] "" Vector__XXX
+	SG_ WhSpdSnsLegisltdDiagTrobCodeIndx : 7|5@0+ (1,0) [0|31] "" Vector__XXX
+	SG_ WhSpdSnsLegisltdDiagTrobCodeStat : 2|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ BrkPedlDrvrAppldPresVald : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ SparTireStat : 10|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ BrkTemp : 23|8@0+ (4,-40) [-40|980] "C" Vector__XXX
+	SG_ ChssBrkngLoad : 31|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+	SG_ BrkPedlDrvrAppldPres : 47|8@0+ (75,0) [0|19125] "kPa" Vector__XXX
+
+BO_ 961 PPEIPwrtrnImmobData: 8 ECM
+	SG_ PwrtrnImmobInfo : 7|64@0+ (1,0) [0|1.8446e+19] "" Vector__XXX
+
+BO_ 969 PPEIPlatImmobData: 8 GW
+	SG_ ImmobInfo : 7|64@0+ (1,0) [0|1.84467e+19] "" Vector__XXX
+
+BO_ 977 PPEIEngGenStat2: 8 ECM
+	SG_ ThrotPosVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ ThrotProgrsnStat : 6|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngEmissReltdMalfctnActv : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngNonEmissReltdMalfctnActv : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngEmissReltdMalfctnIndictnReq : 2|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ ThrotPos : 15|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+	SG_ EngBstPresIndictnVald : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngCstFuelCutOffActv : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngOilStrvIndictnOn : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ ApplyBrkBfrCrzIndictnOn : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrzCtrlDrvrSelSpd : 19|12@0+ (0.0625,0) [0|255.938] "km/h" Vector__XXX
+	SG_ CrzCtrlDrvrSelSpdActv : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelFiltLifeRsttPerfmd : 38|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AirCondComprCmd : 37|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngOilLifeRsttPerfmd : 36|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ InstantFuelCnsmptnRate : 35|12@0+ (0.025,0) [0|102.375] "L/hr" Vector__XXX
+	SG_ EngBstPresIndictn : 55|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+	SG_ AirCondComprNormLoadGradAllwd : 63|8@0+ (0.1,0) [0|25.5] "(dm^3/min)/s" Vector__XXX
+
+BO_ 993 PPEIEngBASStat1: 2 BPIM
+	SG_ ServHybdSysIndictnOn : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ HybdVehHighVoltSysDisbld : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ ChrgAsstGaugePerc : 15|8@0- (0.787402,0) [-100.787|100] "%" Vector__XXX
+
+BO_ 1001 PPEIVehSpdAndDist: 8 ECM
+	SG_ VehSpdAvgDrvVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ VehSpdAvgDrv : 6|15@0+ (0.015625,0) [0|511.46] "km/h" Vector__XXX
+	SG_ VehSpdAvgDrvSrc : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DistRolCntAvgDrvVald : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DistRolCntAvgDrvRsttOccurd : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DistRolCntAvgDrv : 20|13@0+ (0.125,0) [0|1023.88] "m" Vector__XXX
+	SG_ VehSpdAvgNonDrvVald : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ VehSpdAvgNonDrv : 38|15@0+ (0.015625,0) [0|511.46] "km/h" Vector__XXX
+	SG_ DistRolCntAvgDrvSrc : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DistRolCntAvgNonDrvVald : 54|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DistRolCntAvgNonDrvRsttOccurd : 53|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DistRolCntAvgNonDrv : 52|13@0+ (0.125,0) [0|1023.88] "m" Vector__XXX
+
+BO_ 1005 PPEIVehLmtSpdCtrlCmd: 6 Onstar
+	SG_ EnhSvcsVehTopSpdLmtReq : 7|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EnhSvcsVehTopSpdLmtValAlvRolCnt : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ EnhSvcsVehTopSpdLmtPass : 15|32@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EnhSvcsVehTopSpdLmtVal : 47|8@0+ (2,0) [0|510] "km/h" Vector__XXX
+
+BO_ 1009 PPEIPlatEngCntrlReq: 8 GW
+	SG_ EngCoolngFanSpdAdjstmt : 7|8@0- (0.78125,0) [-100|99.2188] "%" Vector__XXX
+	SG_ GenrReglrSetpDutyCyclReq : 15|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+	SG_ VehTopSpdLmtReq : 23|8@0+ (2,0) [0|510] "km/h" Vector__XXX
+	SG_ AirCondComprEngRunReq : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngOffTimeVuirtDevMask : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngOffTimeVuirtDevAvail : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngOffTimeExtRngVald : 26|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PlatMinIdleBstLvlReq : 25|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngOffTimeExtRng : 39|8@0+ (4,0) [0|1020] "min" Vector__XXX
+	SG_ IntrDimDisplLvl : 47|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+	SG_ OutsdAirTempVuirtDevAvail : 49|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ OutsdAirTempCorrValVald : 48|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ OutsdAirTempCorrVal : 63|8@0+ (0.5,-40) [-40|87.5] "C" Vector__XXX
+
+BO_ 1017 PPEIEngGenStat3: 8 ECM
+	SG_ FuelInjRolCntRsttOccurd : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ GenrFldDutyCyclVald : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ GenrFail : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngSpdLimttnModeActv : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ VehTopSpdLmtModeActv : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrtrnTopSpdLmtRedcd : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AirCondRefrgHighSideFludPresVald : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ GenrSetpDutyCyclPwrtrnOverrdActv : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelInjRolCnt : 15|16@0+ (3.05176e-05,0) [0|1.99997] "L" Vector__XXX
+	SG_ GenrFldDutyCycl : 31|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+	SG_ VehTopSpdLmtArbtrdVal : 39|8@0+ (2,0) [0|510] "km/h" Vector__XXX
+	SG_ EngCoolngFanSpd : 47|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+	SG_ EngOilRemLife : 55|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+	SG_ AirCondRefrgHighSideFludPres : 63|8@0+ (14,0) [0|3570] "kPa(g)" Vector__XXX
+
+BO_ 1019 PPEIEngFuelStat: 2 ECM
+	SG_ FuelAlchlCompVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EmissReltdFuelLvlLow : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelLvlEmissReltdStat : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelAlchlCompAdaptnInProg : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngFuelCtrlState : 1|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelAlchlComp : 15|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+
+BO_ 1105 PPEIGatewyLSGenInfo: 5 GW
+	SG_ HybdVehHighVoltInvrtrDisblReq : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FrntlImpctStage1SeverAchvd : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FrntlImpctStage2SeverAchvd : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ LSideSeverAchvd : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ RearImpctSeverAchvd : 26|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ RSideSeverAchvd : 25|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ RolSeverAchvd : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ ClimCtrlFrntBlwrFanSpd : 39|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+
+BO_ 1217 PPEIEngGenStat4: 8 ECM
+	SG_ BaroPresAbsVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngCoolntTempVald : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngIntkAirTempVald : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ OutsdAirTempPwrtrnEstmdMask : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ OutsdAirTempPwrtrnEstmdVald : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ LegisltdDiagsStdCondsMet : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ LegisltdDiagsStdCondsFltPres : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngWarmUCyclAchvd : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ BaroPresAbs : 15|8@0+ (0.5,0) [0|127.5] "kPa" Vector__XXX
+	SG_ EngCoolntTemp : 23|8@0+ (1,-40) [-40|215] "C" Vector__XXX
+	SG_ EngIntkAirTemp : 31|8@0+ (1,-40) [-40|215] "C" Vector__XXX
+	SG_ OutsdAirTempPwrtrnEstmd : 39|8@0+ (0.5,-40) [-40|87.5] "C" Vector__XXX
+	SG_ LegisltdDiagsCldStrtCondsMet : 47|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ LegisltdDiagsCldStrtCondsFltPres : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngOilHotIndictnOn : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngEconModeCmdnd : 54|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DieslExhFludWarngIndictnReq : 53|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DieslExhFludRemDistVald : 50|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DieslExhFludRemDist : 49|10@0+ (100,0) [0|102300] "km" Vector__XXX
+
+BO_ 1225 PPEITransGenStat3: 4 TCM
+	SG_ TransOilTempVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransOilTempSensrPres : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransEmissReltdMalfctnActv : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransNonEmissReltdMalfctnActv : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransChngOilNowIndictnOn : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransThrmlMgmtStat : 1|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TransOilTemp : 15|8@0+ (1,-40) [-40|215] "C" Vector__XXX
+	SG_ TransEmissReltdDTC : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1233 PPEIEngGenStat5: 8 ECM
+	SG_ EngOilTempVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngOilPresVald : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngOilPresLowIndictnOn : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngOilLvlLowIndictnOn : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngOilChngIndictnOn : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngHotFuelEnrchIndictnOn : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngHotStopEngIndictnOn : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AirCondOffIndictnOn : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngOilTemp : 15|8@0+ (1,-40) [-40|215] "C" Vector__XXX
+	SG_ EngOilPres : 23|8@0+ (4,0) [0|1020] "kPa" Vector__XXX
+	SG_ RedcdPwrIndictnOn : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ StrtngDisbldIndictnOn : 30|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ ChkFuelFillrCapIndictnOn : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelLvlPercVald : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelTotCapcty : 27|12@0+ (0.125,0) [0|511.875] "L" Vector__XXX
+	SG_ FuelLvlPerc : 47|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+	SG_ EngShtdPendIndictnOn : 49|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngShtdActv : 48|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DieslGlwPlugIndictnOn : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngWatrInFuelIndictnOn : 54|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrtrnExhPartFiltWarngIndictnOn : 53|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PwrtrnHighElecLoadReq : 52|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelFiltChngNowIndictnOn : 51|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngDiagTrobCodePresIndictnOn : 50|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngSpdMaxLmt : 63|8@0+ (32,0) [0|8160] "RPM" Vector__XXX
+
+BO_ 1241 PPEIFuelSysGenStat: 3 FSCM
+	SG_ FuelSysEmissReltdMalfctnActv : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelSysEmissReltdDTCSysDesig : 15|12@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ FuelSysEmissReltdDTCCodeNum : 19|4@0+ (1,0) [0|4095] "" Vector__XXX
+
+BO_ 1249 PPEIVINDig10To17: 8 GW
+	SG_ VehIDfcnNumDig10To17 : 7|64@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1257 PPEIPlatConfData: 6 GW
+	SG_ AntilkBrkSysPres : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TractCtrlSysPres : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ VehStabEnhmctSysPres : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ ElapTimeCntRsttOccurd : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ VehSpdCtrlSysType : 2|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AirCondComprType : 15|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PlatEngSpdCmdSysType : 10|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ ElapTimeCnt : 23|24@0+ (1,0) [0|1.67772e+07] "min" Vector__XXX
+	SG_ EngPerfIDfr : 47|8@0+ (2,0) [0|510] "kW" Vector__XXX
+
+BO_ 1265 PPEIPwrtrnConfData: 6 ECM
+	SG_ WhDistPerRevDrv : 1|10@0+ (3,800) [800|3869] "mm" Vector__XXX
+	SG_ WhDistPerRevNonDrv : 17|10@0+ (3,800) [800|3869] "mm" Vector__XXX
+	SG_ DrvlinFinAxlRat : 32|9@0+ (0.01,2) [2|7.11] "" Vector__XXX
+
+BO_ 1267 PPEIPwrtrnConfData2: 1 ECM
+	SG_ VehMassNom : 7|8@0+ (20,500) [500|5620] "kg" Vector__XXX
+
+BO_ 1300 PPEIVINDig2To9: 8 Vector__XXX
+	SG_ VehIDfcnNumDig2To9 : 7|64@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1906 PPEIDiagTrobCodeInfoExt1: 7 ECM
+	SG_ Unus1 : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus2 : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus3 : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus4 : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus5 : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus6 : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus7 : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DiagTrobCodeTrig : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DiagTrobCodeSrc : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+	SG_ DiagTrobCodeNum : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
+	SG_ DiagTrobCodeFailureType : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+	SG_ WarngIndictrReqStat : 47|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TestFailSincPwrUStat : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TestNotPasdSincPwrUStat : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ HistStat : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TestFailSincCodeClrdStat : 43|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TestNotPasdSincCodeClrdStat : 42|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrntStat : 41|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CodeSuprtd : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DiagTrobCodeFltType : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1914 PPEIDiagTrobCodeInfoExt2: 7 TCCM
+	SG_ Unus1 : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus2 : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus3 : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus4 : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus5 : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus6 : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus7 : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DiagTrobCodeTrig : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DiagTrobCodeSrc : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+	SG_ DiagTrobCodeNum : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
+	SG_ DiagTrobCodeFailureType : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+	SG_ WarngIndictrReqStat : 47|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TestFailSincPwrUStat : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TestNotPasdSincPwrUStat : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ HistStat : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TestFailSincCodeClrdStat : 43|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TestNotPasdSincCodeClrdStat : 42|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrntStat : 41|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CodeSuprtd : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DiagTrobCodeFltType : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1919 PPEIDiagTrobCodeInfoExt3: 7 TCM
+	SG_ Unus1 : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus2 : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus3 : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus4 : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus5 : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus6 : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Unus7 : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DiagTrobCodeTrig : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DiagTrobCodeSrc : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+	SG_ DiagTrobCodeNum : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
+	SG_ DiagTrobCodeFailureType : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+	SG_ WarngIndictrReqStat : 47|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TestFailSincPwrUStat : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TestNotPasdSincPwrUStat : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ HistStat : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TestNotPasdSincCodeClrdStat : 42|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrntStat : 41|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CodeSuprtd : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DiagTrobCodeFltType : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1011 PPEIPwrPackGenStat: 2 BPIM
+	SG_ PwrPackFanAftrrnTime : 0|9@0+ (1,0) [0|511] "s" Vector__XXX
+
+BO_ 1015 PPEIHybdTempStat: 7 VITM
+	SG_ HighVoltBattTempSensr6Vald : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ HighVoltBattTempSensr5Vald : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ HighVoltBattTempSensr4Vald : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ HighVoltBattTempSensr3Vald : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ HighVoltBattTempSensr2Vald : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ HighVoltBattTempSensr1Vald : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ HighVoltBattTempSensr1 : 15|8@0+ (1,-40) [-40|215] "C" Vector__XXX
+	SG_ HighVoltBattTempSensr2 : 23|8@0+ (1,-40) [-40|215] "C" Vector__XXX
+	SG_ HighVoltBattTempSensr3 : 31|8@0+ (1,-40) [-40|215] "C" Vector__XXX
+	SG_ HighVoltBattTempSensr4 : 39|8@0+ (1,-40) [-40|215] "C" Vector__XXX
+	SG_ HighVoltBattTempSensr5 : 47|8@0+ (1,-40) [-40|215] "C" Vector__XXX
+	SG_ HighVoltBattTempSensr6 : 55|8@0+ (1,-40) [-40|215] "C" Vector__XXX
+
+BO_ 473 PPEIHybdBalanceReq: 6 BPIM
+	SG_ CellIndx : 7|4@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellOpnCrctVoltReq : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ Res : 2|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID1 : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID2 : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID3 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID4 : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID5 : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID6 : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID7 : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID8 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID10 : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID11 : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID12 : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID13 : 19|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID14 : 18|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID15 : 17|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID16 : 16|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID17 : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID18 : 30|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID19 : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID20 : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID21 : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID22 : 26|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID23 : 25|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID24 : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID25 : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID26 : 38|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID27 : 37|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID28 : 36|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID29 : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID30 : 34|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID31 : 33|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID32 : 32|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID33 : 47|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID34 : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID35 : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID36 : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID37 : 43|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID38 : 42|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID39 : 41|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CellBalanceSubID40 : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 478 PPEIHybdBattGenStat: 6 VITM
+	SG_ HighVoltBattSideVoltVald : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ HighVoltBattCrntExtRngVald : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ HighVoltBattCrntExtRng : 8|17@0- (0.01,0) [-655.36|655.32] "A" Vector__XXX
+	SG_ HighVoltBattSideVolt : 39|16@0+ (0.01,0) [0|655.35] "V" Vector__XXX
+
+BO_ 417 PTEIEngGenStat: 7 Vector__XXX
+	SG_ EngDiagTorqConvrtrCltchUnlkReq : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngCylDeactTorqSmoothActv : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ ReqType : 5|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ ReqGear : 3|4@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngBrkStat : 15|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AirCondComprCltchEngag : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ TractCtrlSysPwrtrnInh : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngMtlProtActv : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngCylDeactReq : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngCylDeactMode : 9|2@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngCldHighIdleActv : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PrkNeutSwtchStat : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ PrkNeutSwtchStatVald : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DieslPartcltFiltIdleRegenModeReq : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DieslPartFiltClngAlgoActv : 19|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ DieslPartFiltClngAlgoActvMask : 18|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ AccelPedlPosPercFullRngVald : 17|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngCtrlrRunCrnkTermStat : 16|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngPostOxySensrDiagAsstncReq : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngCrzCtrlMode : 29|3@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ CrzCtrlConstSpdActv : 26|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ WarmUShiftPattReq : 25|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngAllwdCltchAdaptn : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngIdleSpdRedcdRng : 39|8@0+ (8,0) [0|2040] "RPM" Vector__XXX
+	SG_ BaseTrgtEngIdleSpd : 47|8@0+ (8,0) [0|2040] "RPM" Vector__XXX
+	SG_ AccelPedlPosPercFullRng : 55|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+
+VAL_ 193 WhRotStatLDrvDistVald 1 "Invalid" 0 "Valid";
+VAL_ 193 WhRotStatRDrvDistVald 1 "Invalid" 0 "Valid";
+VAL_ 197 WhRotStatLNonDrvDistVald 1 "Invalid" 0 "Valid";
+VAL_ 197 WhRotStatRNonDrvDistVald 1 "Invalid" 0 "Valid";
+VAL_ 199 TransOutRotStatRotDir 3 "Undefined" 2 "Reverse" 1 "Forward" 0 "Unknown";
+VAL_ 199 TransOutRotStatLastTransType 3 "Undefined" 2 "Falling Transition" 1 "Rising Transition" 0 "Single Edge Sensor";
+VAL_ 199 TransOutRotStatVald 1 "Invalid" 0 "Valid";
+VAL_ 201 EngSpdStat 3 "Invalid" 1 "Degraded Operation" 0 "Normal Operation";
+VAL_ 201 AccelActlPosVald 1 "Invalid" 0 "Valid";
+VAL_ 201 PlatEngSpdCmdInhReq 1 "Inhibit Platform Eng. Speed Control" 0 "Allow Platform Engine Speed Control";
+VAL_ 201 EngCylDeactMode 3 "Reactivation In Progress" 2 "Half of Total Cylinders Active" 1 "Deactivation In Progress" 0 "All Cylinders Active";
+VAL_ 201 PwrtrnBrkPedlDiscrtInpStatVald 1 "Invalid" 0 "Valid";
+VAL_ 201 PwrtrnBrkPedlDiscrtInpStat 1 "Brake Applied" 0 "Brake Not Applied";
+VAL_ 201 EngIntkAirBstPresVald 1 "Invalid" 0 "Valid";
+VAL_ 241 BrkPedlModTravAchvdVald 1 "Invalid" 0 "Valid";
+VAL_ 241 BrkPedlIntlTravAchvdVald 1 "Invalid" 0 "Valid";
+VAL_ 249 TransOverllEstmdTorqRatVald 1 "Invalid" 0 "Valid";
+VAL_ 249 TransOutShftAnglrVelVald 1 "Invalid" 0 "Valid";
+VAL_ 381 TractCtrlSysOprtngMode 2 "Off Road" 1 "Normal" 0 "Off";
+VAL_ 381 VehStabEnhmctMode 2 "Competitive" 1 "Normal" 0 "Off";
+VAL_ 451 EngTorqReductFailureStat 4 "Torque Reduction Communication Failed" 3 "Torque Reduction Limited" 2 "Torque Reduction Permanently Failed" 1 "Torque Reduction Temporarily Failed" 0 "Torque Reduction OK";
+VAL_ 451 EngTorqActlExtRngVald 1 "Invalid" 0 "Valid";
+VAL_ 451 AccelEffctvPosVald 1 "Invalid" 0 "Valid";
+VAL_ 451 EngTorqDrvrReqExtRngVald 1 "Invalid" 0 "Valid";
+VAL_ 451 GenrCrntVald 1 "Invalid" 0 "Valid";
+VAL_ 451 EngDrvrPrefModeSwtch1Stat 1 "Active" 0 "Inactive";
+VAL_ 452 AdaptvCrzCtrlAxlTorqCmdReqStat 7 "Unused" 6 "Unused" 5 "Unused" 4 "Request Suspended Until Driver Input" 3 "Request Denied" 2 "Lost Arbitration" 1 "Request Honored" 0 "No Request";
+VAL_ 452 AdaptvCrzCtrlAxlTorqCmdLimtgStat 3 "Request Rate Limited" 2 "Request Value Limited Maximum" 1 "Request Value Limited Minimum" 0 "Request Not Limited";
+VAL_ 453 DrvrIntndAxlTorqVald 1 "Invalid" 0 "Valid";
+VAL_ 453 DrvrIntndAxlTorqMinVald 1 "Invalid" 0 "Valid";
+VAL_ 453 DrvrIntndAxlTorqMaxVald 1 "Invalid" 0 "Valid";
+VAL_ 455 TorqIntrvntType 2 "Increase Torque" 1 "Reduce Torque" 0 "No Intervention";
+VAL_ 460 SecAxlStat 3 "Permanently Failed" 2 "Temporarily Limited" 1 "Temporary Inhibit" 0 "Normal Operation";
+VAL_ 460 SecAxlCtrlMode 1 "External" 0 "Internal";
+VAL_ 460 SecAxlEstmdTorqVald 1 "Invalid" 0 "Valid";
+VAL_ 463 SecAxlOprtnlMode 15 "Neutral" 7 "2 Wheel Drive Low" 6 "Active All Wheel Drive (Low)" 5 "4 Wheel Drive Low Open" 4 "4 Wheel Drive High Open" 3 "Active All Wheel Drive (High)" 2 "4 Wheel Drive Low Locked" 1 "4 Wheel Drive High Locked" 0 "2 Wheel Drive High";
+VAL_ 464 FrntAxlStat 3 "Permanently Failed" 2 "Temporarily Limited" 1 "Temporary Inhibit" 0 "Normal Operation";
+VAL_ 464 FrntAxlCtrlMode 1 "External" 0 "Internal";
+VAL_ 464 FrntAxlEstmdTorqVald 1 "Invalid" 0 "Valid";
+VAL_ 464 FrntAxlOprtnlMode 3 "Unknown" 2 "Locked" 1 "Active" 0 "Open";
+VAL_ 465 RearAxlStat 3 "Permanently Failed" 2 "Temporarily Limited" 1 "Temporary Inhibit" 0 "Normal Operation";
+VAL_ 465 RearAxlCtrlMode 1 "External" 0 "Internal";
+VAL_ 465 RearAxlEstmdTorqVald 1 "Invalid" 0 "Valid";
+VAL_ 465 RearAxlOprtnlMode 3 "Unknown" 2 "Locked" 1 "Active" 0 "Open";
+VAL_ 481 CrzCtrlSwtchDataInteg 3 "Illegal Range" 2 "Failure Detected" 1 "Data Invalid" 0 "Data Valid";
+VAL_ 481 CrzCtrlCnclReq 1 "Cancel" 0 "Do Not Cancel";
+VAL_ 481 FuelModeSwtchActvVald 1 "Invalid" 0 "Valid,";
+VAL_ 485 StrngWhAnglVald 1 "Invalid" 0 "Valid";
+VAL_ 485 StrngWhAnglSensrCalStat 2 "Calibrated" 1 "Estimated" 0 "Unknown";
+VAL_ 489 BrkPedlDrvrAppldPresDetVald 1 "Invalid" 0 "Valid";
+VAL_ 489 VehStabEnhmctLatrlAccltnVald 1 "Invalid" 0 "Valid";
+VAL_ 489 BrkSysTransGearReqType 3 "Hold Gear" 2 "Min Gear Request" 1 "Max Gear Request" 0 "No Action";
+VAL_ 489 BrkSysTransGearReqGear 8 "Eighth Gear" 7 "Seventh Gear" 6 "Sixth Gear" 5 "Fifth Gear" 4 "Fourth Gear" 3 "Third Gear" 2 "Second Gear" 1 "First Gear" 0 "No Action";
+VAL_ 489 TractCtrlSysDrvrIntnt 1 "Enabled" 0 "Disabled";
+VAL_ 489 VehDyncCtrlSysStat 7 "Driver Disabled" 5 "Calibrating" 4 "Warming Up" 3 "Permanently Failed" 2 "Temporarily Inhibited" 1 "Reduced Function" 0 "Normal Operation";
+VAL_ 489 VehDyncYawRateVald 1 "Invalid" 0 "Valid";
+VAL_ 489 VehDyncOverUndrStrVald 1 "Invalid" 0 "Valid";
+VAL_ 490 FuelModeStat 3 "Liquefied Petroleum Gas" 2 "Compressed Natural Gas" 1 "Gasoline Mode" 0 "Alternative Fuel Cut-off Active";
+VAL_ 490 FuelLvlTnk2PercVald 1 "Invalid" 0 "Valid,";
+VAL_ 491 FuelSysEstmdPresDelivrdVald 1 "Invalid" 0 "Valid";
+VAL_ 491 ExhPresReglrValvPosVald 1 "Invalid" 0 "Valid";
+VAL_ 491 ExhPresReglrValvPos 1 "Closed" 0 "Open";
+VAL_ 493 FuelPumpEnabldDiscrtOutCmdndStat 1 "Fuel Pump Enabled" 0 "Fuel Pump Disabled";
+VAL_ 497 BackupPwrModeMstrVuirtDevAvail 1 "Virtual Device Available" 0 "Virtual Device Unavailable";
+VAL_ 497 SysBackupPwrMode 3 "Crank Request" 2 "Run" 1 "Accessory" 0 "Off";
+VAL_ 497 PwrModeMstrRunCrnkTermStat 1 "Active" 0 "Inactive";
+VAL_ 497 PwrModeMstrAcsryTermStat 1 "Active" 0 "Inactive";
+VAL_ 497 SysPwrMode 3 "Crank Request" 2 "Run" 1 "Accessory" 0 "Off";
+VAL_ 497 RemtVehStrtReq 1 "Remote Start Requested" 0 "Remote Start Not Requested";
+VAL_ 497 PwrTakeOffRemtStrtMstrEngStrtReq 1 "PTO Remote Start Requested" 0 "PTO Remote Start Not Requested";
+VAL_ 497 AirCondComprModeReq 2 "Engage" 1 "Disengage" 0 "Disengage Immediately";
+VAL_ 497 AirCondComprNormLoadVald 1 "Invalid" 0 "Valid";
+VAL_ 497 AirCondComprSysVuirtDevAvail 1 "Virtual Device Available" 0 "Virtual Device Unavailable";
+VAL_ 497 ImmobPreRelsPassStat 1 "Information Valid" 0 "No Information";
+VAL_ 497 ThrotProgrsnReq 2 "Map C" 1 "Map B" 0 "Map A";
+VAL_ 497 PrkBrkVuirtDevAvail 1 "Virtual Device Available" 0 "Virtual Device Unavailable";
+VAL_ 497 DisplMeasSys 1 "English" 0 "Metric";
+VAL_ 497 AirbgVuirtDevAvail 1 "Virtual Device Available" 0 "Virtual Device Unavailable";
+VAL_ 499 PlatTransTapUDEnabSwtchState 3 "Illegal Enable Switch State Active" 2 "Electronic Range Select Enable Switch Active" 1 "Driver Shift Control Enable Switch Active" 0 "No Activation";
+VAL_ 499 PlatTransTapUDSwtchState 3 "Illegal Up/Down Switch State Active" 2 "Decrement Switch Active" 1 "Increment Switch Active" 0 "No Activation";
+VAL_ 499 PlatTransTapUDSecSwtchState 3 "Illegal Up/Down Switch State Active" 2 "Decrement Switch Active" 1 "Increment Switch Active" 0 "No Activation";
+VAL_ 501 TransTorqConvrtrCltchCmdndMode 7 "Not Supported" 3 "Locked" 2 "Controlled Slip" 1 "Transitioning" 0 "Unlocked";
+VAL_ 501 TransEstmdGearVald 1 "Invalid" 0 "Valid";
+VAL_ 501 TransEstmdGear 15 "Park Gear" 14 "Reverse Gear" 13 "Neutral Gear" 12 "CVT Forward Gear" 8 "Eighth Gear" 7 "Seventh Gear" 6 "Sixth Gear" 5 "Fifth Gear" 4 "Fourth Gear" 3 "Third Gear" 2 "Second Gear" 1 "First Gear" 0 "Not Supported";
+VAL_ 501 TopOfTravCltchSwtchActvVald 1 "Invalid" 0 "Valid";
+VAL_ 501 AutoTransGearShiftDir 2 "Downshift in Progress" 1 "Upshift in Progress" 0 "No Shift in Progress";
+VAL_ 501 AutoTransCmdndGear 15 "Park Gear" 14 "Reverse Gear" 13 "Neutral Gear" 12 "CVT Forward Gear" 8 "Eighth Gear" 7 "Seventh Gear" 6 "Sixth Gear" 5 "Fifth Gear" 4 "Fourth Gear" 3 "Third Gear" 2 "Second Gear" 1 "First Gear" 0 "Not Supported";
+VAL_ 501 DrvrShiftCtrlTrgtGear 8 "Eighth Gear" 7 "Seventh Gear" 6 "Sixth Gear" 5 "Fifth Gear" 4 "Fourth Gear" 3 "Third Gear" 2 "Second Gear" 1 "First Gear" 0 "Not Supported";
+VAL_ 501 TransRngInhStat 4 "Diagnostic Inhibit Active" 3 "Driveline Not Engaged" 2 "Transmission Range Re-Selection Req" 1 "Transmission Inhibit Active" 0 "No Range Inhibit Active";
+VAL_ 501 TransShiftLvrPosVald 1 "Invalid" 0 "Valid";
+VAL_ 501 TransShiftLvrPos 15 "Lever Position" 9 "Forward Range F" 8 "Forward Range E" 7 "Forward Range D" 6 "Forward Range C" 5 "Forward Range B" 4 "Forward Range A" 3 "Neutral Range" 2 "Reverse Range" 1 "Park Range" 0 "Between Ranges";
+VAL_ 501 CltchStrtSwtchActvVald 1 "Invalid" 0 "Valid";
+VAL_ 501 TransShiftModeStat 3 "Automatic Grade Braking Mode" 2 "Lift-Foot Cornering Mode" 1 "Performance Mode" 0 "No Override Mode";
+VAL_ 501 TransShiftsDelayd 1 "Active" 0 "Inactive";
+VAL_ 501 TransShiftPattActvStat 6 "PT Protection Pattern Active (Reserved and Not Supported)" 5 "PT Non-Protection Pattern Active (Reserved and Not Supported)" 4 "Shift Pattern 4 Active" 3 "Shift Pattern 3 Active" 2 "Shift Pattern 2 Active" 1 "Shift Pattern 1 Active" 0 "Default Shift Pattern Active";
+VAL_ 501 TransTapUTapDModeStat 2 "Electronic Range Select Active" 1 "Driver Shift Control Active" 0 "No Activation";
+VAL_ 501 CltchPedlActlPosVald 1 "Invalid" 0 "Valid";
+VAL_ 501 TransEngagStateVald 1 "Invalid" 0 "Valid";
+VAL_ 501 TransEngagState 3 "Operating State Not Reached" 2 "Engaged in Reverse" 1 "Engaged in Forward" 0 "Transmission Not Engaged";
+VAL_ 505 PlatEngSpdCmdSwtchDataInteg 2 "Failure Detected" 1 "Data Invalid" 0 "Data Valid";
+VAL_ 505 PwrTakeOffTransGearReqType 3 "Hold Gear" 2 "Min Gear Request" 1 "Max Gear Request" 0 "No Action";
+VAL_ 505 PwrTakeOffTransGearReqGear 8 "Eighth Gear" 7 "Seventh Gear" 6 "Sixth Gear" 5 "Fifth Gear" 4 "Fourth Gear" 3 "Third Gear" 2 "Second Gear" 1 "First Gear" 0 "No Action";
+VAL_ 688 StrtrGenrSpdVald 1 "Invalid" 0 "Valid";
+VAL_ 707 EngMnfldAbsPresVald 1 "Invalid" 0 "Valid";
+VAL_ 707 EngTorqMaxExtRngVald 1 "Invalid" 0 "Valid";
+VAL_ 707 EngTorqMinExtRngVald 1 "Invalid" 0 "Valid";
+VAL_ 715 AdaptvCrzCtrlType 3 "Unused" 2 "Unused" 1 "Full Speed Range Adaptive Cruise Control" 0 "Adaptive Cruise Control";
+VAL_ 715 AdaptvCrzCtrlDrvrAsstdGoState 3 "Unused" 2 "Apply Accel Pedal or Resume Switch to Go" 1 "Apply Accel Pedal to Go" 0 "Not Stopped";
+VAL_ 715 WhSpdSnsLegisltdDiagTrobCodeStat 4 "Diagnostic Failed" 3 "Diagnostic Passed" 2 "No Status to Report" 1 "Critically Disabled" 0 "Not Supported";
+VAL_ 715 BrkPedlDrvrAppldPresVald 1 "Invalid" 0 "Valid";
+VAL_ 715 SparTireStat 3 "Spare Detected - Non-Driven Wheels" 2 "Spare Detected - Driven Wheels" 1 "No Spare Detected" 0 "Undetermined";
+VAL_ 977 ThrotPosVald 1 "Invalid" 0 "Valid";
+VAL_ 977 ThrotProgrsnStat 3 "ECM Selected" 2 "Map C" 1 "Map B" 0 "Map A";
+VAL_ 977 EngEmissReltdMalfctnIndictnReq 4 "Flashing 1/2 Hertz" 3 "Flashing 2 Hertz" 2 "Flashing 1 Hertz" 1 "No Indication" 0 "Continuous";
+VAL_ 977 EngBstPresIndictnVald 1 "Invalid" 0 "Valid";
+VAL_ 977 AirCondComprCmd 1 "On" 0 "Off";
+VAL_ 1001 VehSpdAvgDrvVald 1 "Invalid" 0 "Valid";
+VAL_ 1001 VehSpdAvgDrvSrc 1 "Wheel Speed" 0 "Transmission Output Speed";
+VAL_ 1001 DistRolCntAvgDrvVald 1 "Invalid" 0 "Valid";
+VAL_ 1001 VehSpdAvgNonDrvVald 1 "Invalid" 0 "Valid";
+VAL_ 1001 DistRolCntAvgDrvSrc 1 "Wheel Speed" 0 "Transmission Output Speed";
+VAL_ 1001 DistRolCntAvgNonDrvVald 1 "Invalid" 0 "Valid";
+VAL_ 1005 EnhSvcsVehTopSpdLmtReq 2 "Inactive" 1 "Active" 0 "No Action";
+VAL_ 1009 AirCondComprEngRunReq 1 "Engine Run" 0 "No Action";
+VAL_ 1009 EngOffTimeVuirtDevAvail 1 "Virtual Device Available" 0 "Virtual Device Unavailable";
+VAL_ 1009 EngOffTimeExtRngVald 1 "Invalid" 0 "Valid";
+VAL_ 1009 PlatMinIdleBstLvlReq 3 "Boost Level 3" 2 "Boost Level 2" 1 "Boost Level 1" 0 "No Boost Requested";
+VAL_ 1009 OutsdAirTempVuirtDevAvail 1 "Virtual Device Available" 0 "Virtual Device Unavailable";
+VAL_ 1009 OutsdAirTempCorrValVald 1 "Invalid" 0 "Valid";
+VAL_ 1017 GenrFldDutyCyclVald 1 "Invalid" 0 "Valid";
+VAL_ 1017 AirCondRefrgHighSideFludPresVald 1 "Invalid" 0 "Valid";
+VAL_ 1019 FuelAlchlCompVald 1 "Invalid" 0 "Valid";
+VAL_ 1019 FuelLvlEmissReltdStat 1 "Invalid" 0 "Valid";
+VAL_ 1019 EngFuelCtrlState 2 "Stoichiometric Closed Loop" 1 "Non-Stoichiometric Closed Loop" 0 "Open Loop";
+VAL_ 1217 BaroPresAbsVald 1 "Invalid" 0 "Valid";
+VAL_ 1217 EngCoolntTempVald 1 "Invalid" 0 "Valid";
+VAL_ 1217 EngIntkAirTempVald 1 "Invalid" 0 "Valid";
+VAL_ 1217 OutsdAirTempPwrtrnEstmdMask 1 "Use Data" 0 "Do not Use Data";
+VAL_ 1217 OutsdAirTempPwrtrnEstmdVald 1 "Invalid" 0 "Valid";
+VAL_ 1217 DieslExhFludWarngIndictnReq 7 "Reserved" 6 "Reserved" 5 "Warning Level 5" 4 "Warning Level 4" 3 "Warning Level 3" 2 "Warning Level 2" 1 "Warning Level 1" 0 "No Indication";
+VAL_ 1217 DieslExhFludRemDistVald 1 "Invalid" 0 "Valid";
+VAL_ 1225 TransOilTempVald 1 "Invalid" 0 "Valid";
+VAL_ 1225 TransThrmlMgmtStat 2 "Driver Intervention" 1 "Counter-measures" 0 "Normal";
+VAL_ 1233 EngOilTempVald 1 "Invalid" 0 "Valid";
+VAL_ 1233 EngOilPresVald 1 "Invalid" 0 "Valid";
+VAL_ 1233 FuelLvlPercVald 1 "Invalid" 0 "Valid";
+VAL_ 1241 FuelSysEmissReltdDTCSysDesig 15 "U3-Network Codes Reserved" 14 "U2- Network Codes Reserved" 13 "U1-Network Codes MFG Controlled" 12 "U0-Network Codes SAE Controlled" 11 "B3-Body Codes Reserved" 10 "B2-Body Codes Reserved" 9 "B1-Body Codes MFG Controlled" 8 "B0-Body Codes SAE Controlled" 7 "C3-Chassis Codes Reserved" 6 "C2-Chassis Codes Reserved" 5 "C1-Chassis Codes MFG Controlled" 4 "C0-Chassis Codes SAE Controlled" 3 "P3-Powertrain Codes Reserved" 2 "P2-Powertrain Codes Reserved" 1 "P1-Powertrain Codes MFG Controlled" 0 "P0-Powertrain Codes SAE Controlled";
+VAL_ 1257 VehSpdCtrlSysType 2 "Adaptive Cruise Control" 1 "Conventional Cruise Control" 0 "No Vehicle Speed Control";
+VAL_ 1257 AirCondComprType 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Electric Motor Driven" 3 "Variable Displacement Electronic" 2 "Variable Displacement Mechanical" 1 "Fixed Displacement Clutched" 0 "None";
+VAL_ 1257 PlatEngSpdCmdSysType 5 "Enhanced Fast Idle" 4 "Fast Idle" 3 "Mobile Variable PTO" 2 "Stationary Variable PTO" 1 "Stationary PTO" 0 "No Platform Engine Speed Command System Type";
+VAL_ 1906 DiagTrobCodeFltType 3 "Type C" 2 "Type B" 1 "Type A" 0 "Not Supported";
+VAL_ 1914 DiagTrobCodeFltType 3 "Type C" 2 "Type B" 1 "Type A" 0 "Not Supported";
+VAL_ 1919 DiagTrobCodeFltType 3 "Type C" 2 "Type B" 1 "Type A" 0 "Not Supported";
+VAL_ 1015 HighVoltBattTempSensr6Vald 1 "Invalid" 0 "Valid";
+VAL_ 1015 HighVoltBattTempSensr5Vald 1 "Invalid" 0 "Valid";
+VAL_ 1015 HighVoltBattTempSensr4Vald 1 "Invalid" 0 "Valid";
+VAL_ 1015 HighVoltBattTempSensr3Vald 1 "Invalid" 0 "Valid";
+VAL_ 1015 HighVoltBattTempSensr2Vald 1 "Invalid" 0 "Valid";
+VAL_ 1015 HighVoltBattTempSensr1Vald 1 "Invalid" 0 "Valid";
+VAL_ 473 CellIndx 5 "cell index 160 to 200" 4 "cell index 121 to 160" 3 "cell index 81 to 120" 2 "cell index 41 to 80" 1 "cell index 1 to 40" 0 "do not use data";
+VAL_ 473 CellBalanceSubID1 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID2 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID3 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID4 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID5 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID6 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID7 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID8 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID10 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID11 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID12 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID13 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID14 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID15 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID16 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID17 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID18 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID19 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID20 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID21 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID22 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID23 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID24 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID25 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID26 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID27 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID28 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID29 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID30 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID31 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID32 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID33 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID34 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID35 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID36 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID37 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID38 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID39 1 "On" 0 "Off";
+VAL_ 473 CellBalanceSubID40 1 "On" 0 "Off";
+VAL_ 478 HighVoltBattSideVoltVald 1 "Invalid" 0 "Valid";
+VAL_ 478 HighVoltBattCrntExtRngVald 1 "Invalid" 0 "Valid";
+VAL_ 417 ReqType 3 "Hold Gear" 2 "Min Gear Request" 1 "Max Gear Request" 0 "No Action";
+VAL_ 417 ReqGear 8 "Eighth Gear" 7 "Seventh Gear" 6 "Sixth Gear" 5 "Fifth Gear" 4 "Fourth Gear" 3 "Third Gear" 2 "Second Gear" 1 "First Gear" 0 "No Action";
+VAL_ 417 EngBrkStat 2 "Active Absorbing Torque" 1 "Active Not Absorbing Torque" 0 "Inactive";
+VAL_ 417 EngCylDeactMode 3 "Reactivation In Progress" 2 "Half of Total Cylinders Active" 1 "Deactivation In Progress" 0 "All Cylinders Active";
+VAL_ 417 PrkNeutSwtchStat 1 "Not Park/Neutral" 0 "Park/Neutral";
+VAL_ 417 PrkNeutSwtchStatVald 1 "Invalid" 0 "Valid";
+VAL_ 417 DieslPartFiltClngAlgoActvMask 1 "Use Data" 0 "Do Not Use Data";
+VAL_ 417 AccelPedlPosPercFullRngVald 1 "Invalid" 0 "Valid";
+VAL_ 417 EngCtrlrRunCrnkTermStat 1 "Active" 0 "Inactive";
+VAL_ 417 EngCrzCtrlMode 5 "Tap" 4 "Coast" 3 "Accel" 2 "Resume" 1 "Engaged" 0 "Inactive";
+VAL_ 417 WarmUShiftPattReq 1 "Active" 0 "Inactive";
