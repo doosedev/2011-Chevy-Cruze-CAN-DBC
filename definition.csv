@@ -1,0 +1,1482 @@
+Message,ID,ID Decimal,Periodic Interval,Update Time,Event Trigger,Signal,Start Byte,Start Bit,Length,Data Type,Range,Min,Max,Unit,Conversion,Scale,Offset,Transmitter
+PPEI Driven Wheel Rotational Status,$0C1,193,10,,,,,,,,,,,,,,,EBCM
+,,,,,,Wheel Rotational Status Left Driven,0,7,32,Packet,N/A,,,,N/A,,,
+,,,,,,Wheel Rotational Status Left Driven Distance Timestamp Rollover Counter,0,7,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Wheel Rotational Status Left Driven Sequence Number,0,5,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Wheel Rotational Status Left Driven Reset Occurred,0,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Wheel Rotational Status Left Driven Distance Validity,0,2,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Wheel Rotational Status Left Driven Distance Pulse Counter,0,1,10,Unsigned Numeric,0 to 1023,0,1023,,E = N * 1,1,,
+,,,,,,Wheel Rotational Status Left Driven Distance Timestamp,2,7,16,Unsigned Numeric,0 to 65535,0,65535,,E = N * 1,1,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,Wheel Rotational Status Right Driven,4,7,32,Packet,N/A,,,,N/A,,,
+,,,,,,Wheel Rotational Status Right Driven Distance Timestamp Rollover Counter,4,7,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Wheel Rotational Status Right Driven Sequence Number,4,5,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Wheel Rotational Status Right Driven Reset Occurred,4,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Wheel Rotational Status Right Driven Distance Validity,4,2,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Wheel Rotational Status Right Driven Distance Pulse Counter,4,1,10,Unsigned Numeric,0 to 1023,0,1023,,E = N * 1,1,,
+,,,,,,Wheel Rotational Status Right Driven Distance Timestamp,6,7,16,Unsigned Numeric,0 to 65535,0,65535,,E = N * 1,1,,
+,,,,,,,,,,,,,,,,,,
+PPEI Non Driven Wheel Rotational Status,$0C5,197,10,,,,,,,,,,,,,,,EBCM
+,,,,,,Wheel Rotational Status Left Non Driven,0,7,32,Packet,N/A,,,,N/A,,,
+,,,,,,Wheel Rotational Status Left Non Driven Distance Timestamp Rollover Counter,0,7,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Wheel Rotational Status Left Non Driven Sequence Number,0,5,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Wheel Rotational Status Left Non Driven Reset Occurred,0,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Wheel Rotational Status Left Non Driven Distance Validity,0,2,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Wheel Rotational Status Left Non Driven Distance Pulse Counter,0,1,10,Unsigned Numeric,0 to 1023,0,1023,,E = N * 1,1,,
+,,,,,,Wheel Rotational Status Left Non Driven Distance Timestamp,2,7,16,Unsigned Numeric,0 to 65535,0,65535,,E = N * 1,1,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,Wheel Rotational Status Right Non Driven,4,7,32,Packet,N/A,,,,N/A,,,
+,,,,,,Wheel Rotational Status Right Non Driven Distance Timestamp Rollover Counter,4,7,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Wheel Rotational Status Right Non Driven Sequence Number,4,5,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Wheel Rotational Status Right Non Driven Reset Occurred,4,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Wheel Rotational Status Right Non Driven Distance Validity,4,2,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Wheel Rotational Status Right Non Driven Distance Pulse Counter,4,1,10,Unsigned Numeric,0 to 1023,0,1023,,E = N * 1,1,,
+,,,,,,Wheel Rotational Status Right Non Driven Distance Timestamp,6,7,16,Unsigned Numeric,0 to 65535,0,65535,,E = N * 1,1,,
+,,,,,,,,,,,,,,,,,,
+PPEI Transmission Output Rotational Status,$0C7,199,12.5,,,,,,,,,,,,,,,TCM
+,,,,,,Transmission Output Rotational Status,0,7,32,Packet,N/A,,,,N/A,,,
+,,,,,,Transmission Output Rotational Status Rotation Direction,0,7,2,Enumeration,N/A,,,,"$0 = Unknown
+$1 = Forward
+$2 = Reverse
+$3 = Undefined",,,
+,,,,,,Transmission Output Rotational Status Last Transition Type,0,5,2,Enumeration,N/A,,,,"$0 = Single Edge Sensor
+$1 = Rising Transition
+$2 = Falling Transition
+$3 = Undefined",,,
+,,,,,,Transmission Output Rotational Status Reset Occurred,0,3,1,Boolean,N/A,,,,"$0 = False
+$1 = True",,,
+,,,,,,Transmission Output Rotational Status Validity,0,2,1,Enumeration,N/A,,,,"$0 = Valid
+$1 = Invalid",,,
+,,,,,,Transmission Output Rotational Status Pulse Counter,0,1,10,Unsigned Numeric,0 to 1023,0,1023,,E = N * 1,1,,
+,,,,,,Transmission Output Rotational Status Timestamp,2,7,16,Unsigned Numeric,0 to 65535,0,65535,,E = N * 1,1,,
+,,,,,,,,,,,,,,,,,,
+PPEI Engine General Status 1,$0C9,201,12.5,,,,,,,,,,,,,,,ECM
+,,,,,,Engine Run Active,0,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Powertrain Crank Active,0,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Powertrain Crank Aborted,0,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Powertrain Run Aborted,0,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Power Take Off Powertrain Run Aborted,0,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Idle Active,0,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Speed Status,0,1,2,Enumeration,N/A,,,,"$0 = Normal Operation
+$1 = Degraded Operation
+$3 = Invalid",,,
+,,,,,,Engine Speed,1,7,16,Unsigned Numeric,0.0 to 16383.8,0.0,16383.8,RPM,E = N * 0.25,1/4,,
+,,,,,,Accelerator Actual Position Validity,3,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Cruise Control Active,3,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Cruise Control Enabled,3,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Driver Throttle Override Detected,3,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Driver Throttle Override Detection Alive Rolling Count,3,3,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Driver Throttle Override Detected Protection Value,3,1,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Accelerator Actual Position,4,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
+,,,,,,Platform Engine Speed Command Superceded,5,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Platform Engine Speed Command Inhibit Request,5,4,1,Enumeration,N/A,,,,"$0 = Allow Platform Engine Speed Control
+$1 = Inhibit Platform Eng. Speed Control",,,
+,,,,,,Engine Cylinder Deactivation Mode,5,3,2,Enumeration,N/A,,,,"$0 = All Cylinders Active
+$1 = Deactivation In Progress
+$2 = Half of Total Cylinders Active
+$3 = Reactivation In Progress",,,
+,,,,,,Powertrain Brake Pedal Discrete Input Status Validity,5,1,1,Enumeration,N/A,,,,"$0 = Valid
+$1 = Invalid",,,
+,,,,,,Powertrain Brake Pedal Discrete Input Status,5,0,1,Enumeration,N/A,,,,"$0 = Brake Not Applied
+$1 = Brake Applied",,,
+,,,,,,Remote Vehicle Start Engine Running,6,7,1,Boolean,N/A,,,,"$0 = False
+$1 = True",,,
+,,,,,,Engine Cylinder Deactivation Event Pending,6,6,1,Boolean,N/A,,,,"$0 = False
+$1 = True",,,
+,,,,,,Engine Intake Air Boost Pressure Validity,6,3,1,Enumeration,N/A,,,,"$0 = Valid
+$1 = Invalid",,,
+,,,,,,Engine Intake Air Boost Pressure,7,7,8,Signed Numeric,-128 to 127,-128,127,kPa(g),E = N * 1,1,,
+,,,,,,,,,,,,,,,,,,
+PPEI Brake Apply Status,$0F1,241,10,,,,,,,,,,,,,,,BSM
+,,,,,,Brake Pedal Moderate Travel Achieved Validity,0,7,1,Enumeration,N/A,,,,"$0 = Valid
+$1 = Invalid",,,
+,,,,,,Brake Pedal Moderate Travel Achieved,0,6,1,Boolean,N/A,,,,"$0 = False
+$1 = True",,,
+,,,,,,Brake Pedal Position Alive Rolling Count,0,5,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Brake Pedal Initial Travel Achieved Protection,0,3,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,Brake Pedal Initial Travel Achieved Status,0,1,2,Packet,N/A,,,,N/A,,,
+,,,,,,Brake Pedal Initial Travel Achieved,0,1,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Brake Pedal Initial Travel Achieved Validity,0,0,1,Enumeration,N/A,,,,"$0 = Valid
+$1 = Invalid",,,
+,,,,,,Brake Pedal Position,1,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
+,,,,,,Brake Pedal Position Gradient,2,7,8,,,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Brake Lights Active,3,7,1,Boolean,,,,,,,,
+,,,,,,Brake Apply Sensor Home Position Learned,3,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,,,,,,,,,,,,
+PPEI Transmission General Status 1,$0F9,249,12.5,,,,,,,,,,,,,,,"TCM, ECM"
+,,,,,,Transmission Overall Estimated Torque Ratio Validity,0,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Transmission Overall Estimated Torque Ratio,0,6,15,Signed Numeric,-64.0 to 63.99609375,-64.0,63.99609375,,E = N * 1/256,1/256,,
+,,,,,,Transmission Output Shaft Angular Velocity Validity,2,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Transmission Output Shaft Angular Velocity Sensor Present,2,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Transmission Output Rotations Rolling Count Reset Occurred,2,5,1,Boolean,,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Transmission Output Rotations Rolling Count Validity,2,4,1,Boolean,,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,2,3,1,,,,,,,,,
+,,,,,,,2,2,1,,,,,,,,,
+,,,,,,,2,1,1,,,,,,,,,
+,,,,,,,2,0,1,,,,,,,,,
+,,,,,,Transmission Output Rotations Rolling Count,5,7,16,,,,,,,,,
+,,,,,,Transmission Cruise Control Vehicle Speed Shift Event Threshold,7,7,8,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+PPEI Vehicle Odometer,$120,288,,,,,,,,,,,,,,,,
+,,,,,,Vehicle Odometer,0,7,32,,,,,,,,,
+,,,,,,Vehicle Odometer Validity,4,0,1,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+PPEI Antilock Brake And TC Status,$17D,381,100,,,,,,,,,,,,,,,EBCM
+,,,,,,Traction Control System Operating Mode,0,4,3,Enumeration,N/A,,,,"$0 = Off
+$1 = Normal
+$2 = Off Road",,,EBCM
+,,,,,,Vehicle Stability Enhancement Mode,6,2,3,Enumeration,N/A,,,,"$0 = Off
+$1 = Normal
+$2 = Competitive",,,
+,,,,,,,,,,,,,,,,,,
+PPEI Engine Torque Status 2,$1C3,451,25,,,,,,,,,,,,,,,ECM
+,,,,,,Engine Torque Reduction Failure Status,0,7,3,Enumeration,N/A,,,,"$0 = Torque Reduction OK
+$1 = Torque Reduction Temporarily Failed
+$2 = Torque Reduction Permanently Failed
+$3 = Torque Reduction Limited
+$4 = Torque Reduction Communication Failed",,,
+,,,,,,Engine Torque Actual Extended Range Validity,0,4,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Engine Torque Actual Extended Range,0,3,12,Unsigned Numeric,-848.0 to 1199.5,-848.0,1199.5,Nm,E = (N * 0.50) - 848,1/2,-848,
+,,,,,,,2,7,1,,,,,,,,,
+,,,,,,Powertrain Regulated Generator Control Active,2,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Accelerator Effective Position Validity,2,5,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Engine Torque Driver Requested Extended Range Validity,2,4,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Engine Torque Driver Requested Extended Range,2,3,12,Unsigned Numeric,-848.0 to 1199.5,-848.0,1199.5,Nm,E = (N * 0.50) - 848,1/2,-848,
+,,,,,,Fuel Filter Remaining Life,4,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
+,,,,,,Generator Current Validity,5,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Generator Current,5,6,7,Unsigned Numeric,0 to 127,0,127,A,E = N * 1,1,,
+,,,,,,Accelerator Effective Position,6,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
+,,,,,,Engine Driver Preference Mode Switch 1 Enabled,7,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Driver Preference Mode Switch 1 Status,7,6,1,Enumeration,N/A,,,,"$0 = Inactive;
+$1 = Active",,,
+,,,,,,Economy Mode Active Indication On,7,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Economy Mode Request Denied Indication On,7,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,,,,,,,,,,,,
+PPEI Torque Request Status,$1C4,452,25,,,,,,,,,,,,,,,ECM
+,,,,,,,0,7,1,,,,,,,,,
+,,,,,,,0,6,1,,,,,,,,,
+,,,,,,,0,5,1,,,,,,,,,
+,,,,,,Accelerator Pedal Override Active,0,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Accelerator Pedal Override Active Alive Rolling Count,0,3,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Accelerator Pedal Override Active Protection Value,0,1,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,Adaptive Cruise Control Axle Torque Command Status,1,7,5,Packet,,,,,,,,
+,,,,,,Adaptive Cruise Control Axle Torque Command Request Status,1,7,3,Enumeration,N/A,,,,"$0 = No Request
+$1 = Request Honored
+$2 = Lost Arbitration
+$3 = Request Denied
+$4 = Request Suspended Until Driver Input
+$5 = Unused
+$6 = Unused
+$7 = Unused",,,
+,,,,,,Adaptive Cruise Control Axle Torque Command Limiting Status,1,4,2,Enumeration,N/A,,,,"$0 = Request Not Limited
+$1 = Request Value Limited Minimum
+$2 = Request Value Limited Maximum
+$3 = Request Rate Limited",,,
+,,,,,,Road Load Nominal Axle Torque,1,2,19,Unsigned Numeric,-22534 to 43000,-22534,43000,Nm,E = (N/8) - 22534,1/8,-22534,
+,,,,,,,,,,,,,,,,,,
+PPEI Driver Intended Axle Torque Status,$1C5,453,25,,,,,,,,,,,,,,,ECM
+,,,,,,Driver Intended Axle Torque Validity,0,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Driver Intended Axle Torque,0,6,15,Unsigned Numeric,-22534 to 43000,-22534,43000,Nm,E = (N * 2) - 22534,2,-22534,
+,,,,,,Driver Intended Axle Torque Minimum Validity,2,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Driver Intended Axle Torque Minimum,2,6,15,Unsigned Numeric,-22534 to 43000,-22534,43000,Nm,E = (N * 2) - 22534,2,-22534,
+,,,,,,Driver Intended Axle Torque Maximum Validity,4,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Driver Intended Axle Torque Maximum,4,6,15,Unsigned Numeric,-22534 to 43000,-22534,43000,Nm,E = (N * 2) - 22534,2,-22534,
+,,,,,,,,,,,,,,,,,,
+PPEI Chassis Engine Torque Request 1,$1C7,455,20,,,,,,,,,,,,,,,EBCM
+,,,,,,,0,7,1,,,,,,,,,
+,,,,,,,0,6,1,,,,,,,,,
+,,,,,,Torque Intervention Type,0,5,2,Enumeration,N/A,,,,"$0 = No Intervention
+$1 = Reduce Torque
+$2 = Increase Torque",,,
+,,,,,,Torque Request Value,0,3,12,Unsigned Numeric,-848.0 to 1199.5,-848.0,1199.5,Nm,E = (N * 0.5) - 848,1/2,-848,
+,,,,,,Traction Control Alive Rolling Count,2,7,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Chassis System Engine Torque Request Protection,2,5,14,Unsigned Numeric,0 to 16383,0,16383,,E = N * 1,1,,
+,,,,,,,4,7,1,,,,,,,,,
+,,,,,,,4,6,1,,,,,,,,,
+,,,,,,,4,5,1,,,,,,,,,
+,,,,,,,4,4,1,,,,,,,,,
+,,,,,,,4,3,1,,,,,,,,,
+,,,,,,,6,7,1,,,,,,,,,
+,,,,,,Traction Control Maximum Torque Increase Rate,6,5,6,Unsigned Numeric,0 to 1008,0,1008,Nm/s,E = N * 16,16,,
+,,,,,,,,,,,,,,,,,,
+PPEI Secondary Axle Status,$1CC,460,20,,,,,,,,,,,,,,,TCCM/RDCM
+,,,,,,Secondary Axle Status,0,7,3,Enumeration,,,,,"$0 = Normal Operation
+$1 = Temporary Inhibit
+$2 = Temporarily Limited
+$3 = Permanently Failed",,,
+,,,,,,Secondary Axle Control Mode,0,4,1,Enumeration,,,,,"$0 = Internal
+$1 = External",,,
+,,,,,,Secondary Axle Estimated Torque,0,1,10,Unsigned Numeric,0 to 10230,0,10230,Nm,E = N * 10,10,,
+,,,,,,Secondary Axle Estimated Torque Validity,0,2,1,Enumeration,,,,,"$0 = Valid
+$1 = Invalid",,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,Secondary Axle Maximum Differential Velocity Allowed,2,7,8,Packet,,,,,,,,
+,,,,,,Secondary Axle Maximum Differential Velocity Allowed Active,2,7,1,Boolean,,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Secondary Axle Maximum Differential Velocity Allowed Request,2,6,7,Unsigned Numeric,0 to 254,0,254,RPM,E = N * 2,2,,
+,,,,,,,,,,,,,,,,,,
+PPEI Secondary Axle Control,$1CE,462,20,,,,,,,,,,,,,,,EBCM
+,,,,,,Secondary Axle Torque Request,0,7,11,Packet,,,,,,,,
+,,,,,,Secondary Axle Torque Request Active,0,7,1,Boolean,,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Secondary Axle Torque Request Value,0,6,10,Unsigned Numeric,0 to 10230,0,10230,Nm,E = N * 10,10,,
+,,,,,,Secondary Axle Torque Request Alive Rolling Count,2,4,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Secondary Axle Torque Request Protection Value,2,2,11,Unsigned Numeric,0 to 255,0,255,,N/A,,,
+,,,,,,,,,,,,,,,,,,
+PPEI Secondary Axle General Information,$1CF,463,100,,,,,,,,,,,,,,,TCCM/RDCM
+,,,,,,Secondary Axle Malfunction Indication On,0,7,1,Boolean,,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Secondary Axle Temporary Inhibit Indication On,0,6,1,Boolean,,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Secondary Axle Operational Mode,0,3,4,Enumeration,,,,,"$0 = 2 Wheel Drive High
+$1 = 4 Wheel Drive High Locked
+$2 = 4 Wheel Drive Low Locked
+$3 = Active All Wheel Drive (High)
+$4 = 4 Wheel Drive High Open
+$5 = 4 Wheel Drive Low Open
+$6 = Active All Wheel Drive (Low)
+$7 = 2 Wheel Drive Low
+$F = Neutral",,,
+,,,,,,,,,,,,,,,,,,
+PPEI Front Axle Status,$1D0,464,20,,,,,,,,,,,,,,,TCCM/FDCM
+,,,,,,Front Axle Status,0,7,3,Enumeration,,,,,"$0 = Normal Operation
+$1 = Temporary Inhibit
+$2 = Temporarily Limited
+$3 = Permanently Failed",,,
+,,,,,,Front Axle Control Mode,0,4,1,Enumeration,,,,,"$0 = Internal
+$1 = External",,,
+,,,,,,Front Axle Estimated Torque,0,3,11,Signed Numeric,-5120 to 5115,-5120,5115,Nm,E = N * 10,10,,
+,,,,,,Front Axle Estimated Torque Validity,1,0,1,Enumeration,,,,,"$0 = Valid
+$1 = Invalid",,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,Front Axle Maximum Differential Velocity Allowed,2,7,8,Packet,,,,,,,,
+,,,,,,Front Axle Maximum Differential Velocity Allowed Active,2,7,1,Boolean,,,,,"$1 = True ;
+$0 = False",,,
+,,,,,,Front Axle Maximum Differential Velocity Allowed Value,2,6,7,Unsigned Numeric,0 to 254,0,254,RPM,E = N * 2,2,,
+,,,,,,Front Axle Operational Mode,3,7,3,Enumeration,,,,,"$0 = Open
+$1 = Active
+$2 = Locked
+$3 = Unknown",,,
+,,,,,,,,,,,,,,,,,,
+PPEI Rear Axle Status,$1D1,465,20,,,,,,,,,,,,,,,TCCM/RDCM
+,,,,,,Rear Axle Status,0,7,3,Enumeration,,,,,"$0 = Normal Operation
+$1 = Temporary Inhibit
+$2 = Temporarily Limited
+$3 = Permanently Failed",,,
+,,,,,,Rear Axle Control Mode,0,4,1,Enumeration,,,,,"$0 = Internal
+$1 = External",,,
+,,,,,,Rear Axle Estimated Torque,0,3,11,Signed Numeric,-5120 to 5115,-5120,5115,Nm,E = N * 10,10,,
+,,,,,,Rear Axle Estimated Torque Validity,1,0,1,Enumeration,,,,,"$0 = Valid
+$1 = Invalid",,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,Rear Axle Maximum Differential Velocity Allowed,2,7,8,Packet,,,,,,,,
+,,,,,,Rear Axle Maximum Differential Velocity Allowed Active,2,7,1,Boolean,,,,,"$1 = True;
+$0 = False",,,
+,,,,,,Rear Axle Maximum Differential Velocity Allowed Value,2,6,7,Unsigned Numeric,0 to 254,0,254,RPM,E = N * 2,2,,
+,,,,,,Rear Axle Operational Mode,3,7,3,Enumeration,,,,,"$0 = Open
+$1 = Active
+$2 = Locked
+$3 = Unknown",,,
+,,,,,,,,,,,,,,,,,,
+PPEI Cruise Control Switch Status,$1E1,481,30,,,,,,,,,,,,,,,GW
+,,,,,,Cruise Control Switch Status,0,7,8,Packet,N/A,,,,N/A,,,
+,,,,,,Cruise Control Cancel Switch Active,0,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Cruise Control On Switch Active,0,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Cruise Control Resume Switch Active,0,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Cruise Control Set Switch Active,0,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Cruise Control Speed Increase Switch Active,0,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Cruise Control Speed Decrease Switch Active,0,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Cruise Control Switch Data Integrity,0,1,2,Enumeration,N/A,,,,"$0 = Data Valid
+$1 = Data Invalid
+$2 = Failure Detected
+$3 = Illegal Range",,,
+,,,,,,Cruise Control Switch Status Protection Value,1,7,8,Unsigned Numeric,0 to 255,0,255,,E = N * 1,1,,
+,,,,,,Adaptive Cruise Control Gap Switch Activation,2,7,2,,,,,,,,,
+,,,,,,,2,5,1,,,,,,,,,
+,,,,,,,2,4,1,,,,,,,,,
+,,,,,,,2,3,1,,,,,,,,,
+,,,,,,Cruise Control Cancel Request,2,2,1,Enumeration,N/A,,,,"$0 = Do Not Cancel;
+$1 = Cancel",,,
+,,,,,,Cruise Control Switch Status Alive Rolling Count,2,1,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Fuel Mode Switch Active Validity,3,5,1,Enumeration,N/A,,,,"$0 = Valid,
+$1 = Invalid",,,
+,,,,,,Fuel Mode Switch Active,3,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Driver Preference Mode Switch 1 Alive Rolling Count,4,6,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,,,,,,,,,,,,,
+PPEI Steering Wheel Angle,$1E5,485,10,,,,,,,,,,,,,,,"EBCM, EPS"
+,,,,,,Steering Wheel Angle Validity,0,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Steering Wheel Angle Sensor Calibration Status,0,6,2,Enumeration,N/A,,,,"$0 = Unknown
+$1 = Estimated
+$2 = Calibrated",,,
+,,,,,,,0,4,1,,,,,,,,,
+,,,,,,,0,3,1,,,,,,,,,
+,,,,,,Steering Wheel Angle Sensor Initialized,0,2,1,,,,,,,,,
+,,,,,,Steering Wheel Angle Sensor Multiturn Capable,0,1,1,,,,,,,,,
+,,,,,,,0,0,1,,,,,,,,,
+,,,,,,Steering Wheel Angle,1,7,16,Signed Numeric,-2048.0 to 2047.94,-2048.0,2047.94, ,E = N * (1/16),1/16,,
+,,,,,,Steering Wheel Angle Sensor Present,3,7,1,,,,,,,,,
+,,,,,,Steering Wheel Angle Alive Rolling Count,3,6,2,,,,,,,,,
+,,,,,,Power Steering Indication On,3,4,1,,,,,,,,,
+,,,,,,Steering Wheel Angle Gradient,3,3,12,Signed Numeric,-2048.0 to 2047.94,-2048.0,2047.94, /s,E = N * 1,1,,
+,,,,,,Steering Wheel Angle Extended Protection Value,5,7,16,,,,,,,,,
+,,,,,,Steering Wheel Angle Timebase Rolling Count,7,7,8,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+PPEI Chassis General Status 1,$1E9,489,20,,,,,,,,,,,,,,,EBCM
+,,,,,,Brake Pedal Driver Applied Pressure Detected Validity,0,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Brake Pedal Driver Applied Pressure Detected,0,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Transmission Brake System Clutch Release Requested,0,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Vehicle Stability Enhancement Lateral Acceleration Validity,0,4,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Vehicle Stability Enhancement Lateral Acceleration,0,3,12,Signed Numeric,-32.0 to 31.9844,-32.0,31.9844,m/s^2,E = N * 1/64,1/64,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,Brake System Transmission Gear Request,2,5,6,Packet,N/A,,,,N/A,,,
+,,,,,,Brake System Transmission Gear Request Type,2,5,2,Enumeration,N/A,,,,"$0 = No Action
+$1 = Max Gear Request
+$2 = Min Gear Request
+$3 = Hold Gear",,,
+,,,,,,Brake System Transmission Gear Requested Gear,2,3,4,Enumeration,N/A,,,,"$0 = No Action
+$1 = First Gear
+$2 = Second Gear
+$3 = Third Gear
+$4 = Fourth Gear
+$5 = Fifth Gear
+$6 = Sixth Gear
+$7 = Seventh Gear
+$8 = Eighth Gear",,,
+,,,,,,Adaptive Cruise Control Braking Active,3,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Antilock Brake System Active,3,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Antilock Brake System Failed,3,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Traction Control System Active,3,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Traction Control System Enabled,3,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Traction Control System Driver Intent,3,2,1,Enumeration,N/A,,,,"$0 = Disabled;
+$1 = Enabled",,,
+,,,,,,Vehicle Stability Enhancement System Active,3,0,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Vehicle Dynamics Control System Status,4,7,3,Enumeration,N/A,,,,"$0 = Normal Operation
+$1 = Reduced Function
+$2 = Temporarily Inhibited
+$3 = Permanently Failed
+$4 = Warming Up
+$5 = Calibrating
+$7 = Driver Disabled",,,
+,,,,,,Vehicle Dynamics Yaw Rate Validity,4,4,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Vehicle Dynamics Yaw Rate,4,3,12,Signed Numeric,-128.0 to 127.938,-128.0,127.938, /s,E = N * (1/16),1/16,,
+,,,,,,Driver Independent Brake Apply Active,6,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,6,6,1,,,,,,,,,
+,,,,,,,6,5,1,,,,,,,,,
+,,,,,,,6,4,1,,,,,,,,,
+,,,,,,,6,3,1,,,,,,,,,
+,,,,,,Vehicle Dynamics Over Under Steer Validity,6,2,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Vehicle Dynamics Over Under Steer,6,1,10,Signed Numeric,-256 to 255.5,-256,255.5,%,E = N * 0.5,1/2,,
+,,,,,,,,,,,,,,,,,,
+PPEI Alternative Fuel System Status,$1EA,490,12.5,,,,,,,,,,,,,,,ECM
+,,,,,,Fuel Mode Status,0,7,3,Enumeration,N/A,,,,"$0 = Alternative Fuel Cut-off Active
+$1 = Gasoline Mode
+$2 = Compressed Natural Gas
+$3 = Liquefied Petroleum Gas",,,
+,,,,,,Alternative Fuel Mode Request Denied Indication On,0,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Fuel Level Tank 2 Percent Validity,0,3,1,Enumeration,N/A,,,,"$0 = Valid,
+$1 = Invalid",,,
+,,,,,,Alternative Fuel Level Low,0,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Alternative Fuel Preheating Active,0,1,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Alternative Fuel Acceleration Warning Active,0,0,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Fuel Level Tank 2 Percent,1,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * (100/255),100/255,,
+,,,,,,Fuel Total Capacity Tank 2,2,7,12,Unsigned Numeric,0.0 to 511.875,0.0,511.875,L,E = N * (1/8),1/8,,
+,,,,,,,,,,,,,,,,,,
+PPEI Fuel System Status,$1EB,491,12.5,,,,,,,,,,,,,,,FSCM
+,,,,,,Fuel System Estimated Pressure Delivered Validity,0,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Exhaust Pressure Regulator Valve Position Validity,0,6,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Exhaust Pressure Regulator Valve Position,0,5,1,Enumeration,N/A,,,,"$0 = Open;
+$1 = Closed",,,
+,,,,,,,0,4,1,,,,,,,,,
+,,,,,,,0,3,1,,,,,,,,,
+,,,,,,,0,2,1,,,,,,,,,
+,,,,,,Fuel System Estimated Pressure Delivered,0,1,10,Unsigned Numeric,0 to 1023,0,1023,kPa,E = N,1,,
+,,,,,,,,,,,,,,,,,,
+PPEI Fuel System Request,$1ED,493,12.5,,,,,,,,,,,,,,,ECM
+,,,,,,Fuel Control System Fault Present,0,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Fuel Pump Enabled Discrete Output Commanded Status,0,6,1,Enumeration,N/A,,,,"$0 = Fuel Pump Disabled
+$1 = Fuel Pump Enabled",,,
+,,,,,,,0,5,4,,,,,,,,,
+,,,,,,Fuel Delivery Pressure Requested,0,1,10,Unsigned Numeric,0 to 1023,0,1023,kPa,E = N,1,,
+,,,,,,Instantaneous Fuel Flow Estimate,2,7,16,Unsigned Numeric,0.0 to 63.999023,0.0,63.999023,g/s,E = N/1024,1/1024,,
+,,,,,,Advanced Fuel Flow Estimate,4,7,16,Unsigned Numeric,0.0 to 63.999023,0.0,63.999023,g/s,E = N/1024,1/1024,,
+,,,,,,Commanded Air Fuel Ratio,6,7,16,Unsigned Numeric,0.0 to 31.999512,0.0,31.999512,,E = N/2048,1/2048,,
+,,,,,,,,,,,,,,,,,,
+PPEI Fuel System Request 2,$1EF,495,12.5,,,,,,,,,,,,,,,
+,,,,,,Mass Air Flow Validity,0,7,1,Boolean,N/A,,,,"$0 = Invalid,
+$1 = Valid",,,
+,,,,,,,0,6,7,,,,,,,,,
+,,,,,,,1,7,8,,,,,,,,,
+,,,,,,Mass Air Flow,2,7,16,Unsigned Numeric,0.0 to 655.35,0.0,655.35,g/s,E = N * 0.01,1/100,,
+,,,,,,,,,,,,,,,,,,
+PPEI Platform General Status,$1F1,497,100,25,,,,,,,,,,,,,,GW
+,,,,,X,Backup Power Mode Master Virtual Device Availability,0,7,1,Enumeration,N/A,,,,"$0 = Virtual Device Unavailable
+$1 = Virtual Device Available",,,
+,,,,,X,System Backup Power Mode Enabled,0,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,X,System Backup Power Mode,0,5,2,Enumeration,N/A,,,,"$0 = Off
+$1 = Accessory
+$2 = Run
+$3 = Crank Request",,,
+,,,,,,Power Mode Master Run Crank Terminal Status,0,3,1,Enumeration,N/A,,,,"$0 = Inactive;
+$1 = Active",,,
+,,,,,,Power Mode Master Accessory Terminal Status,0,2,1,Enumeration,N/A,,,,"$0 = Inactive;
+$1 = Active",,,
+,,,,,X,System Power Mode,0,1,2,Enumeration,N/A,,,,"$0 = Off
+$1 = Accessory
+$2 = Run
+$3 = Crank Request",,,
+,,,,,X,Remote Vehicle Start Request,1,7,1,Enumeration,N/A,,,,"$0 = Remote Start Not Requested
+$1 = Remote Start Requested",,,
+,,,,,X,Power Take Off Remote Start Master Engine Start Request,1,6,1,Enumeration,N/A,,,,"$0 = PTO Remote Start Not Requested
+$1 = PTO Remote Start Requested",,,
+,,,,,X,Power Take Off Remote Start Master Engine Shutdown Requested,1,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,X,Air Conditioning Compressor Mode Request,1,4,2,Enumeration,N/A,,,,"$0 = Disengage Immediately
+$1 = Disengage
+$2 = Engage",,,
+,,,,,,Air Conditioning Compressor Normalized Load Validity,1,2,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Air Conditioning Compressor System Virtual Device Availability,1,1,1,Enumeration,N/A,,,,"$0 = Virtual Device Unavailable
+$1 = Virtual Device Available",,,
+,,,,,X,Immobilizer Pre Release Password Status,1,0,1,Enumeration,N/A,,,,"$0 = No Information
+$1 = Information Valid",,,
+,,,,,,Immobilizer Pre Release Password,2,7,16,Unsigned Numeric,0 to 65535,0,65535,,E = N * 1,1,,
+,,,,,X,Throttle Progression Request,4,7,2,Enumeration,N/A,,,,"$0 = Map A
+$1 = Map B
+$2 = Map C",,,
+,,,,,,Engine Oil Life Reset Request,4,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Park Brake Switch Active,4,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Park Brake Virtual Device Availability,4,3,1,Enumeration,N/A,,,,"$0 = Virtual Device Unavailable
+$1 = Virtual Device Available",,,
+,,,,,,,4,2,11,,,,,,,,,
+,,,,,,Air Conditioning Compressor Normalized Load,6,7,8,Unsigned Numeric,0.0 to 25.5,0.0,25.5,dm^3/min,E = N * 0.1,1/10,,
+,,,,,,Air Conditioning Compressor Failed On,7,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Park Brake Virtual Device Mask,7,6,1,,,,,,,,,
+,,,,,,Backup Power Mode Master Virtual Device Mask,7,5,1,,,,,,,,,
+,,,,,,Air Conditioning Compressor System Virtual Device Mask,7,4,1,,,,,,,,,
+,,,,,,Display Measurement System,7,3,1,Enumeration,N/A,,,,"$0 = Metric
+$1 = English",,,BCM
+,,,,,,Airbag Deployed,7,2,1,Boolean,N/A,,,,"$1 = True,
+$0 = False",,,BCM
+,,,,,,Airbag Virtual Device Availability,7,1,1,Enumeration,N/A,,,,"$0 = Virtual Device Unavailable
+$1 = Virtual Device Available",,,
+,,,,,,Fuel Filter Life Reset Requested,7,0,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,,,,,,,,,,,,
+PPEI Platform Transmission Requests,$1F3,499,30,,,,,,,,,,,,,,,GW
+,,,,,,Transmission Platform Shift Pattern Switch Alive Rolling Count,0,7,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Transmission Platform Shift Pattern Switch 1 Active,0,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Transmission Platform Shift Pattern Switch 2 Active,0,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Transmission Platform Shift Pattern Switch 3 Active,0,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Transmission Platform Shift Pattern Switch 4 Active,0,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Transmission Oil Life Reset Request,0,1,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Overdrive Disable Requested,0,0,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Platform Transmission Tap Up/Down Switch Status Alive Rolling Count,1,7,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Platform Transmission Tap Up/Down Enable Switch State,1,5,2,Enumeration,N/A,,,,"$0 = No Activation
+$1 = Driver Shift Control Enable Switch Active
+$2 = Electronic Range Select Enable Switch Active
+$3 = Illegal Enable Switch State Active",,,
+,,,,,,Platform Transmission Tap Up/Down Switch State,1,3,2,Enumeration,N/A,,,,"$0 = No Activation
+$1 = Increment Switch Active
+$2 = Decrement Switch Active
+$3 = Illegal Up/Down Switch State Active",,,
+,,,,,,Platform Transmission Tap Up/Down Secondary Switch State,1,1,2,Enumeration,N/A,,,,"$0 = No Activation
+$1 = Increment Switch Active
+$2 = Decrement Switch Active
+$3 = Illegal Up/Down Switch State Active",,,
+,,,,,,Powertrain Shift Pattern Override Active,2,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,,,,,,,,,,,,
+PPEI Transmission General Status 2,$1F5,501,25,,,,,,,,,,,,,,,"TCM, ECM"
+,,,,,,Transmission Torque Converter Clutch Commanded Mode,0,7,3,Enumeration,N/A,,,,"$0 = Unlocked
+$1 = Transitioning
+$2 = Controlled Slip
+$3 = Locked
+$7 = Not Supported",,,
+,,,,,,Transmission Estimated Gear Validity,0,4,1,Enumeration,N/A,,,,$0 = Valid; $1 = Invalid,,,
+,,,,,,Transmission Estimated Gear,0,3,4,Enumeration,N/A,,,,"$0 = Not Supported
+$1 = First Gear
+$2 = Second Gear
+$3 = Third Gear
+$4 = Fourth Gear
+$5 = Fifth Gear
+$6 = Sixth Gear
+$7 = Seventh Gear
+$8 = Eighth Gear
+$C = CVT Forward Gear
+$D = Neutral Gear
+$E = Reverse Gear
+$F = Park Gear",,,
+,,,,,,Top Of Travel Clutch Switch Active Validity,1,7,1,Enumeration,N/A,,,,$0 = Valid; $1 = Invalid,,,
+,,,,,,Top Of Travel Clutch Switch Active,1,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Automatic Transmission Gear Shift Direction,1,5,2,Enumeration,N/A,,,,"$0 = No Shift in Progress
+$1 = Upshift in Progress
+$2 = Downshift in Progress",,,
+,,,,,,Automatic Transmission Commanded Gear,1,3,4,Enumeration,N/A,,,,"$0 = Not Supported
+$1 = First Gear
+$2 = Second Gear
+$3 = Third Gear
+$4 = Fourth Gear
+$5 = Fifth Gear
+$6 = Sixth Gear
+$7 = Seventh Gear
+$8 = Eighth Gear
+$C = CVT Forward Gear
+$D = Neutral Gear
+$E = Reverse Gear
+$F = Park Gear",,,
+,,,,,,Transmission Skip Shift Indication On,2,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Recommended Upshift Indication On,2,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Driver Shift Control Request Denied Indication On,2,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,2,4,1,,,,,,,,,
+,,,,,,Driver Shift Control Target Gear,2,3,4,Enumeration,N/A,,,,"$0 = Not Supported
+$1 = First Gear
+$2 = Second Gear
+$3 = Third Gear
+$4 = Fourth Gear
+$5 = Fifth Gear
+$6 = Sixth Gear
+$7 = Seventh Gear
+$8 = Eighth Gear",,,
+,,,,,,Transmission Range Inhibit Status,3,7,3,Enumeration,N/A,,,,"$0 = No Range Inhibit Active
+$1 = Transmission Inhibit Active
+$2 = Transmission Range Re-Selection Req
+$3 = Driveline Not Engaged
+$4 = Diagnostic Inhibit Active",,,
+,,,,,,Transmission Shift Lever Position Validity,3,4,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Transmission Shift Lever Position,3,3,4,Enumeration,N/A,,,,"$0 = Between Ranges
+$1 = Park Range
+$2 = Reverse Range
+$3 = Neutral Range
+$4 = Forward Range A
+$5 = Forward Range B
+$6 = Forward Range C
+$7 = Forward Range D
+$8 = Forward Range E
+$9 = Forward Range F
+$F = Lever Position
+Unknown",,,
+,,,,,,Overdrive Disable Request Granted,4,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Clutch Start Switch Active Validity,4,6,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Clutch Start Switch Active,4,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,4,4,2,,,,,,,,,
+,,,,,,Transmission Shift Mode Status,4,2,3,Enumeration,N/A,,,,"$0 = No Override Mode
+$1 = Performance Mode
+$2 = Lift-Foot Cornering Mode
+$3 = Automatic Grade Braking Mode",,,
+,,,,,,Transmission Shift Lever Lock Requested,5,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Transmission Creep Mode Active,5,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Transmission Shifts Delayed,5,5,1,Enumeration,N/A,,,,"$0 = Inactive;
+$1= Active",,,
+,,,,,,Transmission Shift Pattern Active Status,5,4,3,Enumeration,N/A,,,,"$0 = Default Shift Pattern Active
+$1 = Shift Pattern 1 Active
+$2 = Shift Pattern 2 Active
+$3 = Shift Pattern 3 Active
+$4 = Shift Pattern 4 Active
+$5 = PT Non-Protection Pattern Active (Reserved and Not Supported)
+$6 = PT Protection Pattern Active (Reserved and Not Supported)",,,
+,,,,,,Transmission Tap Up/Tap Down Mode Status,5,1,2,Enumeration,N/A,,,,"$0 = No Activation
+$1 = Driver Shift Control Active
+$2 = Electronic Range Select Active",,,
+,,,,,,Clutch Pedal Actual Position Validity,6,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Transmission Pattern Selection Economy Mode Override Commanded,6,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Transmission Fluid Pressure Present,6,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Transmission Engaged State Validity,6,2,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Transmission Engaged State,6,1,2,Enumeration,N/A,,,,"$0 = Transmission Not Engaged
+$1 = Engaged in Forward
+$2 = Engaged in Reverse
+$3 = Operating State Not Reached",,,
+,,,,,,Clutch Pedal Actual Position,7,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
+,,,,,,,,,,,,,,,,,,
+PPEI PTO Command Data,$1F9,505,30,,,,,,,,,,,,,,,PTO
+,,,,,,Platform Engine Speed Command On Switch Active,0,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Platform Engine Speed Command Speed Increase Switch Active,0,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Platform Engine Speed Command Speed Decrease Switch Active,0,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Accelerator Pedal Power Take Off Override Active,0,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,Platform Engine Speed Command,0,3,12,Packet,N/A,,,,N/A,,,
+,,,,,,Platform Engine Speed Command Mode Active,0,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Platform Engine Speed Request,0,2,11,Unsigned Numeric,0 to 8188,0,8188,RPM,E = N * 4,4,,
+,,,,,,Platform Engine Speed Command Alive Rolling Count,2,7,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Platform Engine Speed Command Switch Data Integrity,2,5,2,Enumeration,N/A,,,,"$0 = Data Valid
+$1 = Data Invalid
+$2 = Failure Detected",,,
+,,,,,,Platform Engine Speed Command Protection Value,2,3,12,Unsigned Numeric,0 to 4095,0,4095,,E = N * 1,1,,
+,,,,,,Power Take Off Remote Engine Shutdown Requested,4,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Transmission Power Take Off Clutch Release Requested,4,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,Power Take Off Transmission Gear Request,4,5,6,Packet,N/A,,,,N/A,,,
+,,,,,,Power Take Off Transmission Gear Request Type,4,5,2,Enumeration,N/A,,,,"$0 = No Action
+$1 = Max Gear Request
+$2 = Min Gear Request
+$3 = Hold Gear",,,
+,,,,,,Power Take Off Transmission Gear Requested Gear,4,3,4,Enumeration,N/A,,,,"$0 = No Action
+$1 = First Gear
+$2 = Second Gear
+$3 = Third Gear
+$4 = Fourth Gear
+$5 = Fifth Gear
+$6 = Sixth Gear
+$7 = Seventh Gear
+$8 = Eighth Gear",,,
+,,,,,,Fast Idle Mode Active,5,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Power Take Off Mode Active,5,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Power Take Off Engine Torque Limit Requested,5,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Power Take Off Remote Engine Start Request,5,4,1,,,,,,,,,
+,,,,,,,5,3,1,,,,,,,,,
+,,,,,,,5,2,1,,,,,,,,,
+,,,,,,,5,1,1,,,,,,,,,
+,,,,,,,5,0,1,,,,,,,,,
+,,,,,,Power Take Off Engine Torque Limit Value Extended Range,6,7,8,Unsigned Numeric,0 to 2040,0,2040,Nm,E = N * 8,8,,
+,,,,,,Power Take Off System Vehicle Top Speed Limit Value,7,7,8,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+PPEI Starter Generator Status 3,$2B0,688,20,,,,,,,,,,,,,,,SGCM
+,,,,,,Starter Generator Speed,2,5,14,Unsigned Numeric,0 to 16383,0,16383,RPM,E = N * 1,1,,
+,,,,,,Starter Generator Speed Validity,4,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,,,,,,,,,,,,,
+PPEI Engine Torque Status 3,$2C3,707,50,,,,,,,,,,,,,,,ECM
+,,,,,,Engine Manifold Absolute Pressure Validity,0,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,,0,6,1,,,,,,,,,
+,,,,,,,0,5,1,,,,,,,,,
+,,,,,,Engine Torque Maximum Extended Range Validity,0,4,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Engine Torque Maximum Extended Range,0,3,12,Unsigned Numeric,-848.0 to 1199.5,-848.0,1199.5,Nm,E = (N * 0.50) - 848,1/2,-848,
+,,,,,,,2,7,1,,,,,,,,,
+,,,,,,,2,6,1,,,,,,,,,
+,,,,,,,2,5,1,,,,,,,,,
+,,,,,,Engine Torque Minimum Extended Range Validity,2,4,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Engine Torque Minimum Extended Range,2,3,12,Unsigned Numeric,-848.0 to 1199.5,-848.0,1199.5,Nm,E = (N * 0.50) - 848,1/2,-848,
+,,,,,,,4,7,1,,,,,,,,,
+,,,,,,,4,6,1,,,,,,,,,
+,,,,,,,4,5,1,,,,,,,,,
+,,,,,,Engine Manifold Absolute Pressure,6,7,8,Unsigned Numeric,0 to 127.5,0,127.5,kPa,E = N * 0.5,1/2,,
+,,,,,,,,,,,,,,,,,,
+PPEI Adaptive Cruise Axle Torque Request,$2CB,715,50,,,,,,,,,,,,,,,ACC
+,,,,,,Adaptive Cruise Control Command Alive Rolling Count,0,7,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,Adaptive Cruise Control Axle Torque Command,0,0,25,Packet,N/A,,,,N/A,,,
+,,,,,,Adaptive Cruise Control Active,0,0,1,Boolean,N/A,,,,"$1 = True;
+$0 = False",,,
+,,,,,,Adaptive Cruise Control Type,1,7,2,Enumeration,N/A,,,,"$0 = Adaptive Cruise Control
+$1 = Full Speed Range Adaptive Cruise Control
+$2 = Unused
+$3 = Unused",,,
+,,,,,,Adaptive Cruise Control Driver Assisted Go State,1,5,2,Enumeration,N/A,,,,"$0 = Not Stopped
+$1 = Apply Accel Pedal to Go
+$2 = Apply Accel Pedal or Resume Switch to Go
+$3 = Unused",,,
+,,,,,,Adaptive Cruise Control Special Reengagement Input Required,1,3,1,Boolean,N/A,,,,"$1 = True;
+$0 = False",,,
+,,,,,,Adaptive Cruise Control Axle Torque Request,1,2,19,Unsigned Numeric,-22534 to 43000,-22534,43000,Nm,E = (N/8) - 22534,1/8,-22534,
+,,,,,,Adaptive Cruise Control Axle Torque Command Protection,4,0,25,Unsigned Numeric,0 to 33554431,0,33554431,,E = N * 1,1,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,EBCM
+,,,,,,Wheel Speed Sensing Legislated Diagnostic Status,0,7,8,Packet,N/A,,,,N/A,,,
+,,,,,,Wheel Speed Sensing Legislated Diagnostic Trouble Code Index,0,7,5,Unsigned Numeric,0 to 31,0,31,,E = N * 1,1,,
+,,,,,,Wheel Speed Sensing Legislated Diagnostic Trouble Code Status,0,2,3,Enumeration,N/A,,,,"$0 = Not Supported
+$1 = Critically Disabled
+$2 = No Status to Report
+$3 = Diagnostic Passed
+$4 = Diagnostic Failed",,,
+,,,,,,,1,7,1,,,,,,,,,
+,,,,,,,1,6,1,,,,,,,,,
+,,,,,,,1,5,1,,,,,,,,,
+,,,,,,Brake Pedal Driver Applied Pressure Validity,1,4,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,,1,3,1,,,,,,,,,
+,,,,,,Spare Tire Status,1,2,3,Enumeration,N/A,,,,"$0 = Undetermined
+$1 = No Spare Detected
+$2 = Spare Detected - Driven Wheels
+$3 = Spare Detected - Non-Driven Wheels",,,
+,,,,,,Brake Temperature,2,7,8,Unsigned Numeric,-40 to 980,-40,980,C,E = (N * 4) - 40,4,-40,
+,,,,,,Chassis Braking Load,3,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
+,,,,,,Brake Pedal Driver Applied Pressure,5,7,8,Unsigned Numeric,0 to 19125,0,19125,kPa,E = N * 75,75,,
+,,,,,,,,,,,,,,,,,,
+PPEI Powertrain Immobilizer Data,$3C1,961,100,,,,,,,,,,,,,,,ECM
+,,,,,,Powertrain Immobilizer Information,0,7,64,Unsigned Numeric,0 to 1.8446e19,0,1.8446e19,,E = N * 1,1,,
+,,,,,,,,,,,,,,,,,,
+PPEI Platform Immobilizer Data,$3C9,969,100,,,,,,,,,,,,,,,GW
+,,,,,,Immobilizer Information,0,7,64,Unsigned Numeric,0 to 1.84467e19,0,1.84467e19,,E = N * 1,1,,
+,,,,,,,,,,,,,,,,,,
+PPEI Engine General Status 2,$3D1,977,100,,,,,,,,,,,,,,,ECM
+,,,,,,Throttle Position Validity,0,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Throttle Progression Status,0,6,2,Enumeration,N/A,,,,"$0 = Map A
+$1 = Map B
+$2 = Map C
+$3 = ECM Selected
+Progression",,,
+,,,,,,Engine Emissions Related Malfunction Active,0,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Non Emissions Related Malfunction Active,0,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Emissions Related Malfunction Indication Request,0,2,3,Enumeration,N/A,,,,"$0 = Continuous
+Indication
+$1 = No Indication
+$2 = Flashing 1 Hertz
+Indication
+$3 = Flashing 2 Hertz
+Indication
+$4 = Flashing 1/2 Hertz
+Indication",,,
+,,,,,,Throttle Position,1,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
+,,,,,,Engine Boost Pressure Indication Validity,2,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Engine Coast Fuel Cut Off Active,2,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Oil Starvation Indication On,2,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Apply Brake Before Cruise Indication On,2,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Cruise Control Driver Selected Speed,2,3,12,Unsigned Numeric,0.0 to 255.938,0.0,255.938,km/h,E = N * 1/16,1/16,,
+,,,,,,Cruise Control Driver Selected Speed Active,4,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Fuel Filter Life Reset Performed,4,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Air Conditioning Compressor Command,4,5,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Engine Oil Life Reset Performed,4,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Instantaneous Fuel Consumption Rate,4,3,12,Unsigned Numeric,0.0 to 102.375,0.0,102.375,L/hr,E = N * 0.025,1/40,,
+,,,,,,Engine Boost Pressure Indication,6,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
+,,,,,,Air Conditioning Compressor Normalized Load Gradient Allowed,7,7,8,Unsigned Numeric,0.0 to 25.5,0.0,25.5,(dm^3/min)/s,E = N * 0.1,1/10,,
+,,,,,,,,,,,,,,,,,,
+PPEI Engine BAS Status 1,$3E1,993,100,,,,,,,,,,,,,,,BPIM
+,,,,,,Service Hybrid System Indication On,0,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Hybrid Vehicle High Voltage System Disabled,0,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,BPI M
+,,,,,,Charge Assist Gauge Percent,1,7,8,Signed Numeric,-100.787456 to 100.000054,-100.787456,100.000054,%,E = N * 0.787402,0.787402,,
+,,,,,,,,,,,,,,,,,,
+PPEI Vehicle Speed And Distance,$3E9,1001,100,,,,,,,,,,,,,,,ECM
+,,,,,,Vehicle Speed Average Driven Validity,0,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Vehicle Speed Average Driven,0,6,15,Unsigned Numeric,0.0 to 511.46,0.0,511.46,km/h,E = N * 0.015625,0.015625,,
+,,,,,,Vehicle Speed Average Driven Source,2,7,1,Enumeration,N/A,,,,"$0 = Transmission Output Speed
+$1 = Wheel Speed",,,
+,,,,,,Distance Rolling Count Average Driven Validity,2,6,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Distance Rolling Count Average Driven Reset Occurred,2,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Distance Rolling Count Average Driven,2,4,13,Unsigned Numeric,0.0 to 1023.875,0.0,1023.875,m,E = N * 1/8,1/8,,
+,,,,,,Vehicle Speed Average Non Driven Validity,4,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Vehicle Speed Average Non Driven,4,6,15,Unsigned Numeric,0.0 to 511.46,0.0,511.46,km/h,E = N * 0.015625,0.015625,,
+,,,,,,Distance Rolling Count Average Driven Source,6,7,1,Enumeration,N/A,,,,"$0 = Transmission Output Speed
+$1 = Wheel Speed",,,
+,,,,,,Distance Rolling Count Average Non Driven Validity,6,6,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Distance Rolling Count Average Non Driven Reset Occurred,6,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Distance Rolling Count Average Non Driven,6,4,13,Unsigned Numeric,0 to 1023.875,0,1023.875,m,E = N * 1/8,1/8,,
+,,,,,,,,,,,,,,,,,,
+PPEI Vehicle Limit Speed Control Cmd,$3ED,1005,250,,,,,,,,,,,,,,,Onstar
+,,,,,,Enhanced Services Vehicle Top Speed Limit Request,0,7,2,Enumeration,N/A,,,,"$0 = No Action
+$1 = Active
+$2 = Inactive",,,
+,,,,,,Enhanced Services Vehicle Top Speed Limit Value Alive Rolling Count,0,5,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Enhanced Services Vehicle Top Speed Limit Password,1,7,32,Unsigned Numeric,N/A,,,,4 ASCII Characters,,,
+,,,,,,Enhanced Services Vehicle Top Speed Limit Value,5,7,8,Unsigned Numeric,0 to 510,0,510,km/h,E = N * 2,2,,
+,,,,,,,,,,,,,,,,,,
+PPEI Platform Engine Cntrl Requests,$3F1,1009,250,,,,,,,,,,,,,,,GW
+,,,,,,Engine Cooling Fan Speed Adjustment,0,7,8,Signed Numeric,-100.0 to 99.2188,-100.0,99.2188,%,E = N * 200/256,200/256,,
+,,,,,,Generator Regulator Setpoint Duty Cycle Request,1,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
+,,,,,,Vehicle Top Speed Limit Request,2,7,8,Unsigned Numeric,0 to 510,0,510,km/h,E = N * 2,2,,
+,,,,,,,3,7,1,,,,,,,,,
+,,,,,,,3,6,1,,,,,,,,,
+,,,,,,Air Conditioning Compressor Engine Run Request,3,5,1,Enumeration,N/A,,,,"$0 = No Action
+$1 = Engine Run
+Requested",,,
+,,,,,,Engine Off Time Virtual Device Mask,3,4,1,,,,,,,,,
+,,,,,,Engine Off Time Virtual Device Availability,3,3,1,Enumeration,N/A,,,,"$0 = Virtual Device Unavailable
+$1 = Virtual Device Available",,,
+,,,,,,Engine Off Time Extended Range Validity,3,2,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Platform Minimum Idle Boost Level Request,3,1,2,Enumeration,N/A,,,,"$0 = No Boost Requested
+$1 = Boost Level 1
+$2 = Boost Level 2
+$3 = Boost Level 3",,,
+,,,,,,Engine Off Time Extended Range,4,7,8,Unsigned Numeric,0 to 1020,0,1020,min,E = N * 4,4,,
+,,,,,,Interior Dimming Display Level,5,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
+,,,,,,Outside Air Temperature Virtual Device Availability,6,1,1,Enumeration,N/A,,,,"$0 = Virtual Device Unavailable
+$1 = Virtual Device Available",,,
+,,,,,,Outside Air Temperature Corrected Value Validity,6,0,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Outside Air Temperature Corrected Value,7,7,8,Unsigned Numeric,-40 to 87.5,-40,87.5,C,E = (N * 0.5) - 40,1/2,-40,
+,,,,,,,,,,,,,,,,,,
+PPEI Engine General Status 3,$3F9,1017,250,,,,,,,,,,,,,,,ECM
+,,,,,,Fuel Injected Rolling Count Reset Occurred,0,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Generator Field Duty Cycle Validity,0,6,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Generator Failed,0,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Speed Limitation Mode Active,0,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Vehicle Top Speed Limit Mode Active,0,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Powertrain Top Speed Limit Reduced,0,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Air Conditioning Refrigerant High Side Fluid Pressure Validity,0,1,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Generator Setpoint Duty Cycle Powertrain Override Active,0,0,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Fuel Injected Rolling Count,1,7,16,Unsigned Numeric,0.0 to 1.99997,0.0,1.99997,L,E = N * 1/32768,1/32768,,
+,,,,,,Generator Field Duty Cycle,3,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
+,,,,,,Vehicle Top Speed Limit Arbitrated Value,4,7,8,Unsigned Numeric,0 to 510,0,510,km/h,E = N * 2,2,,
+,,,,,,Engine Cooling Fan Speed,5,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
+,,,,,,Engine Oil Remaining Life,6,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
+,,,,,,Air Conditioning Refrigerant High Side Fluid Pressure,7,7,8,Unsigned Numeric,0 to 3570,0,3570,kPa(g),E = N * 14,14,,
+,,,,,,,,,,,,,,,,,,
+PPEI Engine Fuel Status,$3FB,1019,250,,,,,,,,,,,,,,,ECM
+,,,,,,Fuel Alcohol Composition Validity,0,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Emissions Related Fuel Level Low,0,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Fuel Level Emissions Related Status,0,5,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Fuel Alcohol Composition Adaptation In Progress,0,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Fuel Control State,0,1,2,Enumeration,N/A,,,,"$0 = Open Loop
+$1 = Non-Stoichiometric Closed Loop
+$2 = Stoichiometric Closed Loop",,,
+,,,,,,Fuel Alcohol Composition,1,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * (100/255),100/255,,
+,,,,,,,,,,,,,,,,,,
+PPEI Gateway LS General Information,$451,1105,25,,,,,,,,,,,,,,,GW
+,,,,,,Hybrid Vehicle High Voltage Inverter Disable Requested,2,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,Notification Event Severity Status,3,6,7,Packet,N/A,,,,N/A,,,
+,,,,,,Frontal Impact Stage 1 Severity Achieved,3,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Frontal Impact Stage 2 Severity Achieved,3,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Left Side Severity Achieved,3,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Rear Impact Severity Achieved,3,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Right Side Severity Achieved,3,1,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Rollover Severity Achieved,3,0,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Climate Control Front Blower Fan Speed,4,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
+,,,,,,,,,,,,,,,,,,
+PPEI Engine General Status 4,$4C1,1217,500,,,,,,,,,,,,,,,ECM
+,,,,,,Barometric Pressure Absolute Validity,0,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Engine Coolant Temperature Validity,0,6,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Engine Intake Air Temperature Validity,0,5,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Outside Air Temperature Powertrain Estimated Mask,0,4,1,Enumeration,N/A,,,,"$0 = Do not Use Data
+$1 = Use Data",,,
+,,,,,,Outside Air Temperature Powertrain Estimated Validity,0,3,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Legislated Diagnostics StAndard Conditions Met,0,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Legislated Diagnostics StAndard Conditions Fault Present,0,1,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Warm Up Cycle Achieved,0,0,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Barometric Pressure Absolute,1,7,8,Unsigned Numeric,0.0 to 127.5,0.0,127.5,kPa,E = N * 0.50,1/2,,
+,,,,,,Engine Coolant Temperature,2,7,8,Unsigned Numeric,-40.0 to 215,-40.0,215,C,E = (N * 1) - 40,1,-40,
+,,,,,,Engine Intake Air Temperature,3,7,8,Unsigned Numeric,-40.0 to 215,-40.0,215,C,E = (N * 1) - 40,1,-40,
+,,,,,,Outside Air Temperature Powertrain Estimated,4,7,8,Unsigned Numeric,-40.0 to 87.5,-40.0,87.5,C,E = (N * 0.50) - 40,1/2,-40,
+,,,,,,Legislated Diagnostics Cold Start Conditions Met,5,7,1,,,,,,,,,
+,,,,,,Legislated Diagnostics Cold Start Conditions Fault Present,5,6,1,,,,,,,,,
+,,,,,,Engine Oil Hot Indication On,5,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Economy Mode Commanded,6,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Diesel Exhaust Fluid Warning Indication Request,6,5,3,Enumeration,N/A,,,,"$0 = No Indication
+$1 = Warning Level 1
+$2 = Warning Level 2
+$3 = Warning Level 3
+$4 = Warning Level 4
+$5 = Warning Level 5
+$6 =Reserved
+$7 =Reserved",,,
+,,,,,,Diesel Exhaust Fluid Remaining Distance Validity,6,2,1,Enumeration,N/A,,,,$0 = Valid; $1 = Invalid,,,
+,,,,,,Diesel Exhaust Fluid Remaining Distance,6,1,10,Unsigned Numeric,0 to 102300,0,102300,km,E = N * 100,100,,
+,,,,,,,,,,,,,,,,,,
+PPEI Transmission General Status 3,$4C9,1225,500,,,,,,,,,,,,,,,"TCM, ECM"
+,,,,,,Transmission Oil Temperature Validity,0,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Transmission Oil Temperature Sensor Present,0,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Transmission Emissions Related Malfunction Active,0,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Transmission Non Emissions Related Malfunction Active,0,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,0,3,1,,,,,,,,,
+,,,,,,Transmission Change Oil Now Indication On,0,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Transmission Thermal Management Status,0,1,2,Enumeration,N/A,,,,"$0 = Normal
+$1 = Counter-measures
+Active
+$2 = Driver Intervention
+Requested",,,
+,,,,,,Transmission Oil Temperature,1,7,8,Unsigned Numeric,-40 to 215,-40,215,C,E = (N * 1) - 40,1,-40,
+,,,,,,Transmission Emissions Related DTC,2,7,16,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+PPEI Engine General Status 5,$4D1,1233,500,,,,,,,,,,,,,,,ECM
+,,,,,,Engine Oil Temperature Validity,0,7,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Engine Oil Pressure Validity,0,6,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Engine Oil Pressure Low Indication On,0,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Oil Level Low Indication On,0,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Oil Change Indication On,0,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Hot Fuel Enrichment Indication On,0,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Hot/Stop Engine Indication On,0,1,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Air Conditioning Off Indication On,0,0,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Oil Temperature,1,7,8,Unsigned Numeric,-40 to 215,-40,215,C,E = (N * 1) - 40,1,-40,
+,,,,,,Engine Oil Pressure,2,7,8,Unsigned Numeric,0 to 1020,0,1020,kPa,E = N * 4,4,,
+,,,,,,Reduced Power Indication On,3,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Starting Disabled Indication On,3,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Check Fuel Filler Cap Indication On,3,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Fuel Level Percent Validity,3,4,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Fuel Total Capacity,3,3,12,Unsigned Numeric,0.0 to 511.875,0.0,511.875,L,E = N * 1/8,1/8,,
+,,,,,,Fuel Level Percent,5,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
+,,,,,,Engine Shutdown Pending Indication On,6,1,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Shutdown Active,6,0,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Diesel Glow Plug Indication On,6,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Water In Fuel Indication On,6,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Powertrain Exhaust Particle Filter Warning Indication On,6,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Powertrain High Electrical Load Requested,6,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Fuel Filter Change Now Indication On,6,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Diagnostic Trouble Code Present Indication On,6,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,6,1,1,,,,,,,,,
+,,,,,,,6,0,1,,,,,,,,,
+,,,,,,Engine Speed Maximum Limit,7,7,8,Unsigned Numeric,0 to 8160,0,8160,RPM,E = N * 32,32,,
+,,,,,,,,,,,,,,,,,,
+PPEI Fuel System General Status,$4D9,1241,500,,,,,,,,,,,,,,,FSCM
+,,,,,,Fuel System Emissions Related Malfunction Active,0,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,0,6,7,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,Fuel System Emissions Related DTC,1,7,16,Packet,N/A,,,,N/A,,,
+,,,,,,Fuel System Emissions Related DTC System Designator,1,7,12,Enumeration,N/A,,,,"$0 = P0-Powertrain Codes SAE Controlled
+$1 = P1-Powertrain Codes MFG Controlled
+$2 = P2-Powertrain Codes Reserved
+$3 = P3-Powertrain Codes Reserved
+$4 = C0-Chassis Codes SAE Controlled
+$5 = C1-Chassis Codes MFG Controlled
+$6 = C2-Chassis Codes Reserved
+$7 = C3-Chassis Codes Reserved
+$8 = B0-Body Codes SAE Controlled
+$9 = B1-Body Codes MFG Controlled
+$A = B2-Body Codes Reserved
+$B = B3-Body Codes Reserved
+$C = U0-Network Codes SAE Controlled
+$D = U1-Network Codes MFG Controlled
+$E = U2- Network Codes Reserved
+$F = U3-Network Codes Reserved",,,
+,,,,,,Fuel System Emissions Related DTC Code Number,2,3,4,Unsigned Numeric,0 to 4095,0,4095,,E = N * 1,1,,
+,,,,,,,,,,,,,,,,,,
+PPEI VIN Digits 10 To 17,$4E1,1249,1000,,,,,,,,,,,,,,,GW
+,,,,,,Vehicle Identification Number Digits 10 To 17,0,7,64,ASCII Chars,N/A,,,,Eight ASCII Characters,,,
+,,,,,,,,,,,,,,,,,,
+PPEI Platform Configuration Data,$4E9,1257,1000,,,,,,,,,,,,,,,GW
+,,,,,,Antilock Brake System Present,0,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Traction Control System Present,0,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Vehicle Stability Enhancement System Present,0,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Elapsed Time Count Reset Occurred,0,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,0,3,1,,,,,,,,,
+,,,,,,Vehicle Speed Control System Type,0,2,3,Enumeration,N/A,,,,"$0 = No Vehicle Speed Control
+$1 = Conventional Cruise Control
+$2 = Adaptive Cruise Control",,,
+,,,,,,Air Conditioning Compressor Type,1,7,3,Enumeration,N/A,,,,"$0 = None
+$1 = Fixed Displacement Clutched
+$2 = Variable Displacement Mechanical
+$3 = Variable Displacement Electronic
+$4 = Electric Motor Driven
+$5 = Reserved
+$6 = Reserved
+$7 = Reserved",,,
+,,,,,,,1,4,1,,,,,,,,,
+,,,,,,,1,3,1,,,,,,,,,
+,,,,,,Platform Engine Speed Command System Type,1,2,3,Enumeration,N/A,,,,"$0 = No Platform Engine Speed Command System Type
+$1 = Stationary PTO
+$2 = Stationary Variable PTO
+$3 = Mobile Variable PTO
+$4 = Fast Idle
+$5 = Enhanced Fast Idle",,,
+,,,,,,Elapsed Time Count,2,7,24,Unsigned Numeric,0 to 16777215,0,16777215,min,E = N * 1,1,,
+,,,,,,Engine Performance Identifier,5,7,8,Unsigned Numeric,0 to 510,0,510,kW,E = N * 2,2,,
+,,,,,,,,,,,,,,,,,,
+PPEI Powertrain Configuration Data,$4F1,1265,1000,,,,,,,,,,,,,,,ECM
+,,,,,,,0,7,1,,,,,,,,,
+,,,,,,,0,6,1,,,,,,,,,
+,,,,,,,0,5,1,,,,,,,,,
+,,,,,,,0,4,1,,,,,,,,,
+,,,,,,,0,3,1,,,,,,,,,
+,,,,,,,0,2,1,,,,,,,,,
+,,,,,,Wheel Distance Per Revolution Driven,0,1,10,Unsigned Numeric,800 to 3869,800,3869,mm,E = (N * 3) + 800,3,800,
+,,,,,,,2,7,1,,,,,,,,,
+,,,,,,,2,6,1,,,,,,,,,
+,,,,,,,2,5,1,,,,,,,,,
+,,,,,,,2,4,1,,,,,,,,,
+,,,,,,,2,3,1,,,,,,,,,
+,,,,,,,2,2,1,,,,,,,,,
+,,,,,,Wheel Distance Per Revolution Non Driven,2,1,10,Unsigned Numeric,800 to 3869,800,3869,mm,E = (N * 3) + 800,3,800,
+,,,,,,,4,7,1,,,,,,,,,
+,,,,,,,4,6,1,,,,,,,,,
+,,,,,,,4,5,1,,,,,,,,,
+,,,,,,,4,4,1,,,,,,,,,
+,,,,,,,4,3,1,,,,,,,,,
+,,,,,,,4,2,1,,,,,,,,,
+,,,,,,,4,1,1,,,,,,,,,
+,,,,,,Driveline Final Axle Ratio,4,0,9,Unsigned Numeric,2.0 to 7.11,2.0,7.11,,E = (N * 0.01) + 2,1/100,2,
+,,,,,,,,,,,,,,,,,,
+PPEI Powertrain Configuration Data 2,$4F3,1267,1000,,,,,,,,,,,,,,,ECM
+,,,,,,Vehicle Mass Nominal,0,7,8,Unsigned Numeric,500 to 5620,500,5620,kg,E = (N * 20) + 500,20,500,
+,,,,,,,,,,,,,,,,,,
+PPEI VIN Digits 2 To 9,$514,1300,,,,,,,,,,,,,,,,
+,,,,,,Vehicle Identification Number Digits 2 To 9,0,7,64,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+PPEI Diagnostic Trouble Code Information Extended 1,$772,1906,1000,,,,,,,,,,,,,,,ECM
+,,,,,,Diagnostic Trouble Code Information Extended,0,7,56,Packet,N/A,,,,N/A,,,
+,,,,,,Unused1,0,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused2,0,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused3,0,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused4,0,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused5,0,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused6,0,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused7,0,1,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Diagnostic Trouble Code Triggered,0,0,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Diagnostic Trouble Code Source,1,7,8,Unsigned Numeric,0 to 255,0,255,,E = N * 1,1,,
+,,,,,,Diagnostic Trouble Code Number,2,7,16,Unsigned Numeric,0 to 65535,0,65535,,E = N * 1,1,,
+,,,,,,Diagnostic Trouble Code Failure Type,4,7,8,Unsigned Numeric,0 to 255,0,255,,E = N * 1,1,,
+,,,,,,Warning Indicator Requested Status,5,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Test Failed Since Power Up Status,5,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Test Not Passed Since Power Up Status,5,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,History Status,5,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Test Failed Since Code Cleared Status,5,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Test Not Passed Since Code Cleared Status,5,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Current Status,5,1,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Code Supported,5,0,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Diagnostic Trouble Code Fault Type,6,7,8,Enumeration,,,,,"$00 = Not Supported
+$01 = Type A
+$02 = Type B
+$03 = Type C
+$04 to $FF = reserved",,,
+,,,,,,,,,,,,,,,,,,
+PPEI Diagnostic Trouble Code Information Extended 2,$77A,1914,1000,,,,,,,,,,,,,,,TCCM
+,,,,,,Diagnostic Trouble Code Information Extended,0,7,56,Packet,N/A,,,,N/A,,,
+,,,,,,Unused1,0,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused2,0,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused3,0,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused4,0,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused5,0,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused6,0,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused7,0,1,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Diagnostic Trouble Code Triggered,0,0,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Diagnostic Trouble Code Source,1,7,8,Unsigned Numeric,0 to 255,0,255,,E = N * 1,1,,
+,,,,,,Diagnostic Trouble Code Number,2,7,16,Unsigned Numeric,0 to 65535,0,65535,,E = N * 1,1,,
+,,,,,,Diagnostic Trouble Code Failure Type,4,7,8,Unsigned Numeric,0 to 255,0,255,,E = N * 1,1,,
+,,,,,,Warning Indicator Requested Status,5,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Test Failed Since Power Up Status,5,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Test Not Passed Since Power Up Status,5,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,History Status,5,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Test Failed Since Code Cleared Status,5,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Test Not Passed Since Code Cleared Status,5,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Current Status,5,1,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Code Supported,5,0,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Diagnostic Trouble Code Fault Type,6,7,8,Enumeration,,,,,"$00 = Not Supported
+$01 = Type A
+$02 = Type B
+$03 = Type C
+$04 to $FF = reserved",,,
+,,,,,,,,,,,,,,,,,,
+PPEI Diagnostic Trouble Code Information Extended 3,$77F,1919,1000,,,,,,,,,,,,,,,TCM
+,,,,,,Diagnostic Trouble Code Information Extended,0,7,56,Packet,N/A,,,,N/A,,,
+,,,,,,Unused1,0,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused2,0,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused3,0,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused4,0,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused5,0,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused6,0,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Unused7,0,1,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Diagnostic Trouble Code Triggered,0,0,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Diagnostic Trouble Code Source,1,7,8,Unsigned Numeric,0 to 255,0,255,,E = N * 1,1,,
+,,,,,,Diagnostic Trouble Code Number,2,7,16,Unsigned Numeric,0 to 65535,0,65535,,E = N * 1,1,,
+,,,,,,Diagnostic Trouble Code Failure Type,4,7,8,Unsigned Numeric,0 to 255,0,255,,E = N * 1,1,,
+,,,,,,Warning Indicator Requested Status,5,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Test Failed Since Power Up Status,5,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Test Not Passed Since Power Up Status,5,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,History Status,5,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Test Not Passed Since Code Cleared Status,5,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Current Status,5,1,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Code Supported,5,0,1,Boolean,,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Diagnostic Trouble Code Fault Type,6,7,8,Enumeration,,,,,"$00 = Not Supported
+$01 = Type A
+$02 = Type B
+$03 = Type C
+$04 to $FF = Reserved",,,
+,,,,,,,,,,,,,,,,,,
+PPEI Power Pack General Status,$3F3,1011,500,,,,,,,,,,,,,,,BPIM
+,,,,,,Power Pack Fan Afterrun Time,0,0,9,Unsigned Numeric,0 to 511,0,511,s,E = N * 1,1,,
+,,,,,,,,,,,,,,,,,,
+PPEI Hybrid Temperature Status,$3F7,1015,200,,,,,,,,,,,,,,,VITM
+,,,,,,High Voltage Battery Temperature Sensor 6 Validity,0,5,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,High Voltage Battery Temperature Sensor 5 Validity,0,4,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,High Voltage Battery Temperature Sensor 4 Validity,0,3,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,High Voltage Battery Temperature Sensor 3 Validity,0,2,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,High Voltage Battery Temperature Sensor 2 Validity,0,1,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,High Voltage Battery Temperature Sensor 1 Validity,0,0,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,High Voltage Battery Temperature Sensor 1,1,7,8,Unsigned Numeric,-40 to 215,-40,215,C,E = (N * 1) - 40,1,-40,
+,,,,,,High Voltage Battery Temperature Sensor 2,2,7,8,Unsigned Numeric,-40 to 215,-40,215,C,E = (N * 1) - 40,1,-40,
+,,,,,,High Voltage Battery Temperature Sensor 3,3,7,8,Unsigned Numeric,-40 to 215,-40,215,C,E = (N * 1) - 40,1,-40,
+,,,,,,High Voltage Battery Temperature Sensor 4,4,7,8,Unsigned Numeric,-40 to 215,-40,215,C,E = (N * 1) - 40,1,-40,
+,,,,,,High Voltage Battery Temperature Sensor 5,5,7,8,Unsigned Numeric,-40 to 215,-40,215,C,E = (N * 1) - 40,1,-40,
+,,,,,,High Voltage Battery Temperature Sensor 6,6,7,8,Unsigned Numeric,-40 to 215,-40,215,C,E = (N * 1) - 40,1,-40,
+,,,,,,,,,,,,,,,,,,
+PPEI Hybrid Balancing Request,$1D9,473,25,,,,,,,,,,,,,,,BPIM
+,,,,,,High Voltage Battery Balancing Request Matrix,0,7,48,Packet,N/A,,,,N/A,,,
+,,,,,,Cell Index,0,7,4,Enumeration,N/A,,,,"$0 = do not use data
+$1 = cell index 1 to 40
+$2 = cell index 41 to 80
+$3 = cell index 81 to 120
+$4 = cell index 121 to 160
+$5 = cell index 160 to 200
+$6 to $F = reserved for future use",,,
+,,,,,,Cell Open Circuit Voltage Request,0,3,1,Boolean,N/A,,,,"$0 = Open Circuit
+Voltage
+$1 = Under Load",,,
+,,,,,,Reserved,0,2,3,N/A,N/A,,,,N/A,,,
+,,,,,,Cell Balancing SubID 1,1,7,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 2,1,6,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 3,1,5,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 4,1,4,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 5,1,3,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 6,1,2,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 7,1,1,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 8,1,0,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 10,2,6,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 11,2,5,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 12,2,4,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 13,2,3,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 14,2,2,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 15,2,1,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 16,2,0,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 17,3,7,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 18,3,6,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 19,3,5,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 20,3,4,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 21,3,3,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 22,3,2,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 23,3,1,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 24,3,0,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 25,4,7,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 26,4,6,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 27,4,5,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 28,4,4,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 29,4,3,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 30,4,2,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 31,4,1,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 32,4,0,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 33,5,7,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 34,5,6,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 35,5,5,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 36,5,4,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 37,5,3,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 38,5,2,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 39,5,1,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,Cell Balancing SubID 40,5,0,1,Enumeration,N/A,,,,"$0 = Off;
+$1 = On",,,
+,,,,,,,,,,,,,,,,,,
+PPEI Hybrid Battery General Status,$1DE,478,25,,,,,,,,,,,,,,,VITM
+,,,,,,High Voltage Battery Side Voltage Validity,0,0,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,High Voltage Battery Current Extended Range Validity,1,1,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,High Voltage Battery Current Extended Range,1,0,17,Signed Numeric,-655.36 to 655.32,-655.36,655.32,A,E = N * 0.01,1/100,,
+,,,,,,High Voltage Battery Side Voltage,4,7,16,Unsigned Numeric,0.0 to 655.35,0.0,655.35,V,E = N * 0.01,1/100,,
+,,,,,,,,,,,,,,,,,,
+PTEI Engine General Status,$1A1,417,25,,,,,,,,,,,,,,,
+,,,,,,Engine Diagnostic Torque Converter Clutch Unlock Requested,0,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Cylinder Deactivation Torque Smoothing Active,0,6,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,Engine Transmission Gear Request,0,5,6,Packet,N/A,,,,N/A,,,
+,,,,,,Request Type,0,5,2,Enumeration,N/A,,,,"$0 = No Action
+$1 = Max Gear Request
+$2 = Min Gear Request
+$3 = Hold Gear",,,
+,,,,,,Requested Gear,0,3,4,Enumeration,N/A,,,,"$0 = No Action
+$1 = First Gear
+$2 = Second Gear
+$3 = Third Gear
+$4 = Fourth Gear
+$5 = Fifth Gear
+$6 = Sixth Gear
+$7 = Seventh Gear
+$8 = Eighth Gear",,,
+,,,,,,Engine Brake Status,1,7,2,Enumeration,N/A,,,,"$0 = Inactive
+$1 = Active Not Absorbing Torque
+$2 = Active Absorbing Torque",,,
+,,,,,,Air Conditioning Compressor Clutch Engaged,1,5,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Traction Control System Powertrain Inhibit,1,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Metal Protection Active,1,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Cylinder Deactivation Requested,1,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Cylinder Deactivation Mode,1,1,2,Enumeration,N/A,,,,"$0 = All Cylinders Active
+$1 = Deactivation In Progress
+$2 = Half of Total Cylinders Active
+$3 = Reactivation In Progress",,,
+,,,,,,Engine Cold High Idle Active,2,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Park Neutral Switch Status,2,6,1,Enumeration,N/A,,,,"$0 = Park/Neutral
+$1 = Not Park/Neutral",,,
+,,,,,,Park Neutral Switch Status Validity,2,5,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Diesel Particulate Filter Idle Regeneration Mode Request,2,4,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Diesel Particle Filter Cleaning Algorithm Active,2,3,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Diesel Particle Filter Cleaning Algorithm Active Mask,2,2,1,Enumeration,N/A,,,,"$0 = Do Not Use Data
+$1 = Use Data",,,
+,,,,,,Accelerator Pedal Position Percent Full Range Validity,2,1,1,Enumeration,N/A,,,,"$0 = Valid;
+$1 = Invalid",,,
+,,,,,,Engine Controller Run Crank Terminal Status,2,0,1,Enumeration,N/A,,,,"$0 = Inactive;
+$1 = Active",,,
+,,,,,,Engine Post Oxygen Sensor Diagnostic Assistance Requested,3,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Cruise Control Mode,3,5,3,Enumeration,N/A,,,,"$0 = Inactive
+$1 = Engaged
+$2 = Resume
+$3 = Accel
+$4 = Coast
+$5 = Tap",,,
+,,,,,,Cruise Control Constant Speed Active,3,2,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Warm Up Shift Pattern Request,3,1,1,Enumeration,N/A,,,,"$0 = Inactive;
+$1 = Active",,,
+,,,,,,Engine Allowed Clutch Adaptation,3,0,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Idle Speed Reduced Range,4,7,8,Unsigned Numeric,0 to 2040,0,2040,RPM,E = N * 8,8,,
+,,,,,,Base Target Engine Idle Speed,5,7,8,Unsigned Numeric,0 to 2040,0,2040,RPM,E = N * 8,8,,
+,,,,,,Accelerator Pedal Position Percent Full Range,6,7,8,Unsigned Numeric,0 to 100,0,100,%,E = N * 100/255,100/255,,
