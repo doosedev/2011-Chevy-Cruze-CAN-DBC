@@ -32,7 +32,7 @@ NS_ :
 
 BS_:
 
-BU_: SGCM PTO TCCM ECM ACC EBCM BSM GW TCM Vector__XXX BPIM FSCM VITM Onstar
+BU_: TCCM VITM ACC BPIM TCM ECM PTO SGCM Onstar GW BSM FSCM Vector__XXX EBCM
 
 BO_ 193 PPEIDrvWhRotStat: 8 EBCM
 	SG_ WhRotStatLDrvDistStampRolCntr : 7|2@0+ (1,0) [0|3] "" Vector__XXX
@@ -122,9 +122,8 @@ BO_ 288 PPEIVehOdom: 5 Vector__XXX
 	SG_ VehOdom : 7|32@0+ (1,0) [0|0] "" Vector__XXX
 	SG_ VehOdomVald : 32|1@0+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 381 PPEIAntilkBrkAndTCStat: 7 EBCM
+BO_ 381 PPEIAntilkBrkAndTCStat: 1 EBCM
 	SG_ TractCtrlSysOprtngMode : 4|3@0+ (1,0) [0|0] "" Vector__XXX
-	SG_ VehStabEnhmctMode : 50|3@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 451 PPEIEngTorqStat2: 8 ECM
 	SG_ EngTorqReductFailureStat : 7|3@0+ (1,0) [0|0] "" Vector__XXX
@@ -217,8 +216,6 @@ BO_ 481 PPEICrzCtrlSwtchStat: 4 GW
 	SG_ CrzCtrlSwtchStatAlvRolCnt : 17|2@0+ (1,0) [0|3] "" Vector__XXX
 	SG_ FuelModeSwtchActvVald : 29|1@0+ (1,0) [0|0] "" Vector__XXX
 	SG_ FuelModeSwtchActv : 28|1@0+ (1,0) [0|0] "" Vector__XXX
-	SG_ EngDrvrPrefModeSwtch1Actv : 31|1@0+ (1,0) [0|0] "" Vector__XXX
-	SG_ EngDrvrPrefModeSwtch1AlvRolCnt : 30|2@0+ (1,0) [0|3] "" Vector__XXX
 
 BO_ 485 PPEIStrngWhAngl: 8 EBCM
 	SG_ StrngWhAnglVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX
@@ -775,7 +772,6 @@ VAL_ 241 BrkPedlIntlTravAchvdVald 1 "Invalid" 0 "Valid";
 VAL_ 249 TransOverllEstmdTorqRatVald 1 "Invalid" 0 "Valid";
 VAL_ 249 TransOutShftAnglrVelVald 1 "Invalid" 0 "Valid";
 VAL_ 381 TractCtrlSysOprtngMode 2 "Off Road" 1 "Normal" 0 "Off";
-VAL_ 381 VehStabEnhmctMode 2 "Competitive" 1 "Normal" 0 "Off";
 VAL_ 451 EngTorqReductFailureStat 4 "Torque Reduction Communication Failed" 3 "Torque Reduction Limited" 2 "Torque Reduction Permanently Failed" 1 "Torque Reduction Temporarily Failed" 0 "Torque Reduction OK";
 VAL_ 451 EngTorqActlExtRngVald 1 "Invalid" 0 "Valid";
 VAL_ 451 AccelEffctvPosVald 1 "Invalid" 0 "Valid";

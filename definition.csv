@@ -153,9 +153,6 @@ PPEI Antilock Brake And TC Status,$17D,381,100,,,,,,,,,,,,,,,EBCM
 ,,,,,,Traction Control System Operating Mode,0,4,3,Enumeration,N/A,,,,"$0 = Off
 $1 = Normal
 $2 = Off Road",,,EBCM
-,,,,,,Vehicle Stability Enhancement Mode,6,2,3,Enumeration,N/A,,,,"$0 = Off
-$1 = Normal
-$2 = Competitive",,,
 ,,,,,,,,,,,,,,,,,,
 PPEI Engine Torque Status 2,$1C3,451,25,,,,,,,,,,,,,,,ECM
 ,,,,,,Engine Torque Reduction Failure Status,0,7,3,Enumeration,N/A,,,,"$0 = Torque Reduction OK
@@ -349,9 +346,6 @@ $1 = Cancel",,,
 $1 = Invalid",,,
 ,,,,,,Fuel Mode Switch Active,3,4,1,Boolean,N/A,,,,"$0 = False;
 $1 = True",,,
-,,,,,,Engine Driver Preference Mode Switch 1 Active,3,7,1,Boolean,N/A,,,,"$0 = False;
-$1 = True",,,
-,,,,,,Engine Driver Preference Mode Switch 1 Alive Rolling Count,3,6,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
 ,,,,,,,,,,,,,,,,,,
 PPEI Steering Wheel Angle,$1E5,485,10,,,,,,,,,,,,,,,"EBCM, EPS"
 ,,,,,,Steering Wheel Angle Validity,0,7,1,Enumeration,N/A,,,,"$0 = Valid;

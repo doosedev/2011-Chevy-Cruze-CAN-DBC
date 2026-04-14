@@ -1036,26 +1036,9 @@
                         "2": "Off Road"
                     },
                     "Receiver": "Vector__XXX"
-                },
-                {
-                    "Name": "Vehicle Stability Enhancement Mode",
-                    "Start Bit": 50,
-                    "Length": 3,
-                    "Unit": "",
-                    "Type": "Unsigned",
-                    "Minimum": 0.0,
-                    "Maximum": 0.0,
-                    "Scale": 1.0,
-                    "Offset": 0.0,
-                    "Values": {
-                        "0": "Off",
-                        "1": "Normal",
-                        "2": "Competitive"
-                    },
-                    "Receiver": "Vector__XXX"
                 }
             ],
-            "DLC": 7
+            "DLC": 1
         },
         "PPEI Engine Torque Status 2": {
             "ID": 451,
@@ -2123,30 +2106,6 @@
                     "Type": "Unsigned",
                     "Minimum": 0.0,
                     "Maximum": 0.0,
-                    "Scale": 1.0,
-                    "Offset": 0.0,
-                    "Receiver": "Vector__XXX"
-                },
-                {
-                    "Name": "Engine Driver Preference Mode Switch 1 Active",
-                    "Start Bit": 31,
-                    "Length": 1,
-                    "Unit": "",
-                    "Type": "Unsigned",
-                    "Minimum": 0.0,
-                    "Maximum": 0.0,
-                    "Scale": 1.0,
-                    "Offset": 0.0,
-                    "Receiver": "Vector__XXX"
-                },
-                {
-                    "Name": "Engine Driver Preference Mode Switch 1 Alive Rolling Count",
-                    "Start Bit": 30,
-                    "Length": 2,
-                    "Unit": "",
-                    "Type": "Unsigned",
-                    "Minimum": 0.0,
-                    "Maximum": 3.0,
                     "Scale": 1.0,
                     "Offset": 0.0,
                     "Receiver": "Vector__XXX"
@@ -8721,19 +8680,19 @@
         }
     },
     "Nodes": [
-        "SGCM",
-        "PTO",
         "TCCM",
-        "ECM",
-        "ACC",
-        "EBCM",
-        "BSM",
-        "GW",
-        "TCM",
-        "Vector__XXX",
-        "BPIM",
-        "FSCM",
         "VITM",
-        "Onstar"
+        "ACC",
+        "BPIM",
+        "TCM",
+        "ECM",
+        "PTO",
+        "SGCM",
+        "Onstar",
+        "GW",
+        "BSM",
+        "FSCM",
+        "Vector__XXX",
+        "EBCM"
     ]
 }
