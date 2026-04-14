@@ -775,7 +775,7 @@ $0 = False",,,
 ,,,,,,Adaptive Cruise Control Axle Torque Request,1,2,19,Unsigned Numeric,-22534 to 43000,-22534,43000,Nm,E = (N/8) - 22534,1/8,-22534,
 ,,,,,,Adaptive Cruise Control Axle Torque Command Protection,4,0,25,Unsigned Numeric,0 to 33554431,0,33554431,,E = N * 1,1,,
 ,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,EBCM
+PPEI Chassis General Status 2,$2F9,761,50,,,,,,,,,,,,,,,EBCM
 ,,,,,,Wheel Speed Sensing Legislated Diagnostic Status,0,7,8,Packet,N/A,,,,N/A,,,
 ,,,,,,Wheel Speed Sensing Legislated Diagnostic Trouble Code Index,0,7,5,Unsigned Numeric,0 to 31,0,31,,E = N * 1,1,,
 ,,,,,,Wheel Speed Sensing Legislated Diagnostic Trouble Code Status,0,2,3,Enumeration,N/A,,,,"$0 = Not Supported

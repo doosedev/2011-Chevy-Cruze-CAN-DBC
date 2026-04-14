@@ -32,7 +32,7 @@ NS_ :
 
 BS_:
 
-BU_: PTO ECM ACC Vector__XXX BSM TCCM Onstar EBCM TCM GW BPIM VITM SGCM FSCM
+BU_: VITM ACC TCM PTO FSCM Onstar TCCM BPIM Vector__XXX BSM GW ECM SGCM EBCM
 
 BO_ 193 PPEIDrvWhRotStat: 8 EBCM
 	SG_ WhRotStatLDrvDistStampRolCntr : 7|2@0+ (1,0) [0|3] "" Vector__XXX
@@ -397,6 +397,8 @@ BO_ 715 PPEIAdaptvCrzAxlTorqReq: 8 ACC
 	SG_ AdaptvCrzCtrlSpclReengagInpReqd : 11|1@0+ (1,0) [0|0] "" Vector__XXX
 	SG_ AdaptvCrzCtrlAxlTorqReq : 10|19@0+ (0.125,-22534) [-22534|43000] "Nm" Vector__XXX
 	SG_ AdaptvCrzCtrlAxlTorqCmdProt : 32|25@0+ (1,0) [0|3.35544e+07] "" Vector__XXX
+
+BO_ 761 PPEIChssGenStat2: 6 EBCM
 	SG_ WhSpdSnsLegisltdDiagTrobCodeIndx : 7|5@0+ (1,0) [0|31] "" Vector__XXX
 	SG_ WhSpdSnsLegisltdDiagTrobCodeStat : 2|3@0+ (1,0) [0|0] "" Vector__XXX
 	SG_ BrkPedlDrvrAppldPresVald : 12|1@0+ (1,0) [0|0] "" Vector__XXX
@@ -861,9 +863,9 @@ VAL_ 707 EngTorqMaxExtRngVald 1 "Invalid" 0 "Valid";
 VAL_ 707 EngTorqMinExtRngVald 1 "Invalid" 0 "Valid";
 VAL_ 715 AdaptvCrzCtrlType 3 "Unused" 2 "Unused" 1 "Full Speed Range Adaptive Cruise Control" 0 "Adaptive Cruise Control";
 VAL_ 715 AdaptvCrzCtrlDrvrAsstdGoState 3 "Unused" 2 "Apply Accel Pedal or Resume Switch to Go" 1 "Apply Accel Pedal to Go" 0 "Not Stopped";
-VAL_ 715 WhSpdSnsLegisltdDiagTrobCodeStat 4 "Diagnostic Failed" 3 "Diagnostic Passed" 2 "No Status to Report" 1 "Critically Disabled" 0 "Not Supported";
-VAL_ 715 BrkPedlDrvrAppldPresVald 1 "Invalid" 0 "Valid";
-VAL_ 715 SparTireStat 3 "Spare Detected - Non-Driven Wheels" 2 "Spare Detected - Driven Wheels" 1 "No Spare Detected" 0 "Undetermined";
+VAL_ 761 WhSpdSnsLegisltdDiagTrobCodeStat 4 "Diagnostic Failed" 3 "Diagnostic Passed" 2 "No Status to Report" 1 "Critically Disabled" 0 "Not Supported";
+VAL_ 761 BrkPedlDrvrAppldPresVald 1 "Invalid" 0 "Valid";
+VAL_ 761 SparTireStat 3 "Spare Detected - Non-Driven Wheels" 2 "Spare Detected - Driven Wheels" 1 "No Spare Detected" 0 "Undetermined";
 VAL_ 977 ThrotPosVald 1 "Invalid" 0 "Valid";
 VAL_ 977 ThrotProgrsnStat 3 "ECM Selected" 2 "Map C" 1 "Map B" 0 "Map A";
 VAL_ 977 EngEmissReltdMalfctnIndictnReq 4 "Flashing 1/2 Hertz" 3 "Flashing 2 Hertz" 2 "Flashing 1 Hertz" 1 "No Indication" 0 "Continuous";

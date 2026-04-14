@@ -4407,7 +4407,14 @@
                     "Scale": 1.0,
                     "Offset": 0.0,
                     "Receiver": "Vector__XXX"
-                },
+                }
+            ],
+            "DLC": 8
+        },
+        "PPEI Chassis General Status 2": {
+            "ID": 761,
+            "Sender": "EBCM",
+            "Signals": [
                 {
                     "Name": "Wheel Speed Sensing Legislated Diagnostic Trouble Code Index",
                     "Start Bit": 7,
@@ -4510,7 +4517,7 @@
                     "Receiver": "Vector__XXX"
                 }
             ],
-            "DLC": 8
+            "DLC": 6
         },
         "PPEI Powertrain Immobilizer Data": {
             "ID": 961,
@@ -8702,19 +8709,19 @@
         }
     },
     "Nodes": [
-        "PTO",
-        "ECM",
+        "VITM",
         "ACC",
+        "TCM",
+        "PTO",
+        "FSCM",
+        "Onstar",
+        "TCCM",
+        "BPIM",
         "Vector__XXX",
         "BSM",
-        "TCCM",
-        "Onstar",
-        "EBCM",
-        "TCM",
         "GW",
-        "BPIM",
-        "VITM",
+        "ECM",
         "SGCM",
-        "FSCM"
+        "EBCM"
     ]
 }
