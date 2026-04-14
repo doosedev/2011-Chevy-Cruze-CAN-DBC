@@ -121,7 +121,7 @@ with open('output.json', mode='w') as jsonfile:
     json.dump(dbc_def, jsonfile, indent=4)
 
 # Write the DBC file
-with open('output.dbc', mode='w') as dbcfile:
+with open('2011-cruze-iso15765-4.dbc', mode='w') as dbcfile:
     # Write headers
     dbcfile.write('VERSION "Generated DBC File"\n\n')
     

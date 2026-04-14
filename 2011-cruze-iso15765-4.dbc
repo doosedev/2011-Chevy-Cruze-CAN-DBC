@@ -32,7 +32,7 @@ NS_ :
 
 BS_:
 
-BU_: VITM ACC TCM PTO FSCM Onstar TCCM BPIM Vector__XXX BSM GW ECM SGCM EBCM
+BU_: SGCM PTO TCCM ECM ACC EBCM BSM GW TCM Vector__XXX BPIM FSCM VITM Onstar
 
 BO_ 193 PPEIDrvWhRotStat: 8 EBCM
 	SG_ WhRotStatLDrvDistStampRolCntr : 7|2@0+ (1,0) [0|3] "" Vector__XXX
@@ -203,7 +203,7 @@ BO_ 465 PPEIRearAxlStat: 4 TCCM
 	SG_ RearAxlMaxDiffrlVelAllwdVal : 22|7@0+ (2,0) [0|254] "RPM" Vector__XXX
 	SG_ RearAxlOprtnlMode : 31|3@0+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 481 PPEICrzCtrlSwtchStat: 5 GW
+BO_ 481 PPEICrzCtrlSwtchStat: 4 GW
 	SG_ CrzCtrlCnclSwtchActv : 7|1@0+ (1,0) [0|0] "" Vector__XXX
 	SG_ CrzCtrlOnSwtchActv : 6|1@0+ (1,0) [0|0] "" Vector__XXX
 	SG_ CrzCtrlResmSwtchActv : 5|1@0+ (1,0) [0|0] "" Vector__XXX
@@ -217,7 +217,8 @@ BO_ 481 PPEICrzCtrlSwtchStat: 5 GW
 	SG_ CrzCtrlSwtchStatAlvRolCnt : 17|2@0+ (1,0) [0|3] "" Vector__XXX
 	SG_ FuelModeSwtchActvVald : 29|1@0+ (1,0) [0|0] "" Vector__XXX
 	SG_ FuelModeSwtchActv : 28|1@0+ (1,0) [0|0] "" Vector__XXX
-	SG_ EngDrvrPrefModeSwtch1AlvRolCnt : 38|2@0+ (1,0) [0|3] "" Vector__XXX
+	SG_ EngDrvrPrefModeSwtch1Actv : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+	SG_ EngDrvrPrefModeSwtch1AlvRolCnt : 30|2@0+ (1,0) [0|3] "" Vector__XXX
 
 BO_ 485 PPEIStrngWhAngl: 8 EBCM
 	SG_ StrngWhAnglVald : 7|1@0+ (1,0) [0|0] "" Vector__XXX

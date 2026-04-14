@@ -349,7 +349,9 @@ $1 = Cancel",,,
 $1 = Invalid",,,
 ,,,,,,Fuel Mode Switch Active,3,4,1,Boolean,N/A,,,,"$0 = False;
 $1 = True",,,
-,,,,,,Engine Driver Preference Mode Switch 1 Alive Rolling Count,4,6,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
+,,,,,,Engine Driver Preference Mode Switch 1 Active,3,7,1,Boolean,N/A,,,,"$0 = False;
+$1 = True",,,
+,,,,,,Engine Driver Preference Mode Switch 1 Alive Rolling Count,3,6,2,Unsigned Numeric,0 to 3,0,3,,E = N * 1,1,,
 ,,,,,,,,,,,,,,,,,,
 PPEI Steering Wheel Angle,$1E5,485,10,,,,,,,,,,,,,,,"EBCM, EPS"
 ,,,,,,Steering Wheel Angle Validity,0,7,1,Enumeration,N/A,,,,"$0 = Valid;

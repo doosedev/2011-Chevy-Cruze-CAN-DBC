@@ -2128,8 +2128,20 @@
                     "Receiver": "Vector__XXX"
                 },
                 {
+                    "Name": "Engine Driver Preference Mode Switch 1 Active",
+                    "Start Bit": 31,
+                    "Length": 1,
+                    "Unit": "",
+                    "Type": "Unsigned",
+                    "Minimum": 0.0,
+                    "Maximum": 0.0,
+                    "Scale": 1.0,
+                    "Offset": 0.0,
+                    "Receiver": "Vector__XXX"
+                },
+                {
                     "Name": "Engine Driver Preference Mode Switch 1 Alive Rolling Count",
-                    "Start Bit": 38,
+                    "Start Bit": 30,
                     "Length": 2,
                     "Unit": "",
                     "Type": "Unsigned",
@@ -2140,7 +2152,7 @@
                     "Receiver": "Vector__XXX"
                 }
             ],
-            "DLC": 5
+            "DLC": 4
         },
         "PPEI Steering Wheel Angle": {
             "ID": 485,
@@ -8709,19 +8721,19 @@
         }
     },
     "Nodes": [
-        "VITM",
-        "ACC",
-        "TCM",
+        "SGCM",
         "PTO",
-        "FSCM",
-        "Onstar",
         "TCCM",
-        "BPIM",
-        "Vector__XXX",
+        "ECM",
+        "ACC",
+        "EBCM",
         "BSM",
         "GW",
-        "ECM",
-        "SGCM",
-        "EBCM"
+        "TCM",
+        "Vector__XXX",
+        "BPIM",
+        "FSCM",
+        "VITM",
+        "Onstar"
     ]
 }
